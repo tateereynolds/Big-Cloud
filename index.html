@@ -1,0 +1,915 @@
+<!doctype html>
+<html lang="en" data-focus-studio-version="pages-v1">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#184e3d">
+  <meta name="description" content="A calmer place to study. Intentional breaks, local camera attention estimates, and honest focus insights.">
+  <title>Focus Studio · A little more present</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2218%22%20fill%3D%22%23184e3d%22/%3E%3Cpath%20d%3D%22M47%2016C25%2013%2013%2026%2019%2040c5%2010%2019%209%2025-3%204-8%203-16%203-21ZM16%2049l23-23%22%20fill%3D%22none%22%20stroke%3D%22%23dce8c6%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22/%3E%3C/svg%3E%0A" type="image/svg+xml">
+  <style>:root{--paper:#f6f5f0;--card:#fffefa;--ink:#253e34;--muted:#788078;--green:#245641;--sage:#92a67a;--line:#e7e9df;--amber:#ce9551;--unknown:#c4c9c1;--shadow:0 6px 26px #263e3405;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);font-synthesis:none}*{box-sizing:border-box}body{margin:0;font-size:14px}button,input,select{font:inherit}button,a,input,select{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:wait;opacity:.55}button,a{touch-action:manipulation}a{color:inherit;text-decoration:none}button{color:inherit}button:focus-visible,a:focus-visible{outline:3px solid #92a67a;outline-offset:4px}svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}input,select{outline:none;border:1px solid var(--line);border-radius:8px;background:#fffefa;color:var(--ink)}input:focus,select:focus{border-color:var(--sage);box-shadow:0 0 0 3px #92a67a22}.icon-defs{position:absolute;width:0;height:0;overflow:hidden}[hidden]{display:none!important}.sidebar{width:236px;position:fixed;inset:0 auto 0 0;border-right:1px solid var(--line);background:#efF1e9;padding:38px 22px;display:flex;flex-direction:column}.brand{display:flex;align-items:center;gap:11px;padding:0 7px;font-size:23px;letter-spacing:-1.1px;font-weight:650}.brand-light{font-weight:380}.brand-mark{background:var(--green);width:37px;height:42px;border-radius:13px 13px 13px 4px;color:#e5efcf;display:grid;place-items:center}.brand-mark svg{width:26px;height:26px}.brand small{display:block;font-size:7px;letter-spacing:1.9px;margin-top:6px;font-weight:600;color:#839077}.sidebar-label{font-size:9px;letter-spacing:1.8px;color:#87917f;margin:56px 12px 17px}nav{display:grid;gap:9px}.nav-item{width:100%;border:0;background:transparent;display:flex;gap:12px;align-items:center;text-align:left;padding:13px 13px;border-radius:8px;font-size:12px;color:#707e6e}.nav-item:hover{background:#e5e9dd}.nav-item.active{background:#e0e8d7;color:var(--green);font-weight:600}.nav-item svg{width:18px;height:18px}.nav-dot{width:5px;height:5px;background:var(--green);border-radius:50%;margin-left:auto}.sidebar-bottom{margin-top:auto;padding:40px 12px 0}.plant{color:#8b9d76;width:110px;margin:0 0 16px 5px}.plant svg{width:100%;height:auto}.sidebar-bottom p{font-family:Georgia,serif;font-size:22px;line-height:1.4;letter-spacing:-.5px;margin:0 0 20px}.sidebar-bottom p em{font-weight:400;color:#849275}.text-button{border:0;background:none;display:inline-flex;align-items:center;gap:7px;font-size:11px;padding:6px 0;color:#6d796b}.text-button:hover{color:var(--green)}.text-button svg{width:15px;height:15px}.local-label{border-top:1px solid #dfe4d6;padding-top:20px;margin-top:25px;color:#95a08b;font-size:10px;display:flex;gap:7px;align-items:center}.local-label span{width:5px;height:5px;background:var(--sage);border-radius:50%}main{margin-left:236px;max-width:1610px;padding:0 48px 24px}.topbar{height:85px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:12px}.breadcrumb{color:#7f897b;letter-spacing:1.2px;font-size:9px;display:flex;gap:16px;align-items:center}.breadcrumb>span:first-child{color:#bdc4b5}.privacy-tag{display:flex;align-items:center;gap:6px;font-size:10px;color:#6f7f66}.privacy-tag svg{width:15px;height:15px}.heading-row{display:flex;justify-content:space-between;align-items:center;margin:34px 0 28px;gap:20px}.eyebrow{font-size:9px;letter-spacing:2px;color:#839373;font-weight:600;margin-bottom:10px}h1{font:400 38px/1.16 Georgia,"Times New Roman",serif;letter-spacing:-1.35px;margin:0 0 11px}.heading-row p{margin:0;color:var(--muted);font-size:12px}.button{border:1px solid transparent;border-radius:8px;padding:11px 16px;display:inline-flex;gap:10px;justify-content:center;align-items:center;font-weight:500;font-size:12px;transition:background .15s,transform .15s}.button:hover{transform:translateY(-1px)}.button svg{width:16px;height:16px}.primary{background:var(--green);color:#fffefa}.primary:hover{background:#1b4534}.subtle{background:var(--card);border-color:var(--line);font-size:11px;padding:10px 13px}.card{background:var(--card);border:1px solid var(--line);border-radius:13px;box-shadow:var(--shadow)}.study-grid{display:grid;grid-template-columns:minmax(350px,1.15fr) minmax(310px,.85fr);gap:22px}.timer-card{padding:25px 28px 20px;display:flex;flex-direction:column;align-items:center;overflow:hidden}.timer-card-top{display:flex;align-items:center;justify-content:space-between;width:100%;gap:12px}.caps{font-size:9px;font-weight:600;letter-spacing:1.3px;color:#7c8873}.block-chip{background:#f0f3e9;border:1px solid #e5eadb;border-radius:5px;padding:5px 8px;font-size:9px;color:#7d8b70}.intention-fields{width:100%;margin:22px 0}.intention-fields label{display:block;font-size:11px;color:#7a8274;margin-bottom:7px}.intention-fields input{width:100%;padding:9px 11px;font-size:13px;border-color:#e9ebe1;background:#f8f9f3}.intention-fields #intention{background:transparent;border:0;box-shadow:none;padding:10px 2px 0;font-size:11px;color:#86917d}.intention-fields input::placeholder{color:#98a08f}.mode-tabs{display:flex;background:#f0f2eb;border-radius:7px;padding:4px;gap:3px}.mode-tabs button{border:0;background:transparent;padding:8px 16px;font-size:10px;border-radius:5px;color:#8a9480}.mode-tabs button.selected{background:#fffefa;box-shadow:0 1px 4px #243e3410;color:var(--green);font-weight:600}.timer-wrap{width:280px;height:280px;margin:21px 0 23px;position:relative;display:grid;place-items:center}.timer-ring{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg)}.timer-ring circle{fill:none;stroke-width:4}.ring-track{stroke:#e7eddc}.timer-ring .ring-progress{stroke:#819c60;stroke-linecap:round;stroke-dasharray:860.797;stroke-dashoffset:0;transition:stroke-dashoffset .3s linear}.timer-content{text-align:center;width:100%;padding:20px}.timer-overline{font-size:8px;letter-spacing:2px;color:#839372;display:block}.countdown{display:block;font-size:66px;font-weight:360;letter-spacing:-3px;line-height:1.45;font-variant-numeric:tabular-nums;color:#284c38}.timer-content>#timerCaption{font-size:10px;line-height:1.5;color:#8b9584;display:block;margin-top:1px}.cycle-dots{display:flex;gap:8px;justify-content:center;margin-top:22px}.cycle-dots span{width:6px;height:6px;background:#e2e8d7;border-radius:50%}.cycle-dots span.done{background:#789761}.cycle-dots span.current{background:#c1ceae}.timer-actions{display:flex;gap:10px;align-items:center}.timer-actions .primary{min-width:200px;padding:13px 20px}.icon-button{background:#f4f6ee;border:1px solid #e4e8db;width:41px;height:41px;border-radius:8px;font-size:22px;color:#829177}.finish-button{margin-top:11px;font-size:10px}.timer-foot{display:flex;justify-content:space-between;align-items:center;width:100%;padding-top:23px;margin-top:auto;color:#939c8a;font-size:9px;gap:12px}.timer-foot>span:first-child{display:flex;gap:6px;align-items:center}.tiny-dot{width:5px;height:5px;background:var(--sage);border-radius:50%;display:inline-block}kbd{font:9px inherit;border:1px solid #dee3d7;border-radius:3px;padding:2px 5px;color:#8d9981}.shortcut{white-space:nowrap}.right-stack{display:flex;flex-direction:column;gap:18px}.camera-card{padding:22px 22px 17px;flex:1}.card-heading{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:18px}.card-heading>div{display:flex;align-items:center;gap:8px}.card-heading svg{width:18px;height:18px;color:#82936e}h2{font-size:15px;font-weight:550;letter-spacing:-.25px;margin:0}.badge{font-size:7px;letter-spacing:.8px;padding:5px 6px;background:#f1f2eb;color:#929989;border-radius:4px;white-space:nowrap}.badge.on{background:#e8efe0;color:#507040}.camera-view{aspect-ratio:1.5;min-height:216px;background:#eff2e9;border:1px solid #e6eadc;border-radius:8px;position:relative;overflow:hidden}.camera-view video{width:100%;height:100%;position:absolute;object-fit:cover;transform:scaleX(-1);display:none}.camera-view.active video{display:block}.camera-view canvas{position:absolute;inset:0;width:100%;height:100%;transform:scaleX(-1);pointer-events:none;object-fit:cover}.camera-empty{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:15px}.camera-icon{width:37px;height:37px;display:grid;place-items:center;background:#e0e8d6;border-radius:11px;color:#869c71;margin-bottom:11px}.camera-icon svg{width:20px;height:20px}.camera-empty h3{font:400 23px Georgia,serif;letter-spacing:-.5px;margin:0 0 8px}.camera-empty p{font-size:10px;line-height:1.7;color:#859079;margin:0 0 14px}.camera-enable{background:#fffefa;border-color:#dbe1d1;color:#647e4e;padding:9px 13px;font-size:10px}.camera-empty small{font-size:8px;color:#96a08a;margin-top:10px}.live-status{position:absolute;bottom:12px;left:12px;display:flex;align-items:center;gap:7px;background:#fffefaf0;border-radius:6px;font-size:10px;padding:8px 10px;max-width:90%}.camera-message{font-size:10px;line-height:1.6;color:#85927b;margin:11px 0;min-height:16px}.tracking-legend{display:flex;gap:18px;font-size:9px;color:#85917a;border-top:1px solid #eef0e7;padding-top:14px}.tracking-legend>span{display:flex;gap:5px;align-items:center}.dot{width:6px;height:6px;border-radius:50%;display:inline-block}.green{color:var(--green);background:#e9efe1}.dot.green{background:var(--green)}.sage{color:#90a478;background:#f1f4e9}.dot.sage{background:var(--sage)}.amber{color:var(--amber);background:#f9f0e1}.dot.amber{background:var(--amber)}.neutral{color:#929e8c;background:#f0f2ec}.camera-controls{display:flex;justify-content:space-between;padding-top:8px;gap:8px}.manual-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:15px 0 8px;padding-top:12px;border-top:1px solid var(--line);font-size:10px;color:#7c8974}.manual-row select{font-size:10px;padding:6px 7px;max-width:65%}.small-note{font-size:9px;color:#8c9582;line-height:1.6}.goal-card{display:flex;gap:16px;border-radius:11px;border:1px solid #e1e7d5;background:#eaf0df;padding:22px 24px}.goal-symbol{font-size:28px;color:#91a677;margin-top:15px}.goal-card>div{flex:1}.goal-card .caps{font-size:7px;letter-spacing:1.6px;color:#92a17f}.goal-card h3{font:400 19px Georgia,serif;letter-spacing:-.3px;margin:6px 0 12px}.goal-numbers{display:flex;align-items:baseline;gap:5px;margin:8px 0 12px}.goal-numbers strong{font-size:21px;font-weight:500}.goal-numbers>span{font-size:10px;color:#839473}.goal-track{background:#d8e2c9;height:4px;border-radius:5px;overflow:hidden}.goal-track>div{height:100%;width:0;background:#8ba26f;border-radius:5px;transition:width .5s}.goal-card p{font-size:9px;color:#8d9d7b;margin:12px 0 0}.insights{margin:28px 0}.section-title{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:16px}.section-title>span{font-size:9px;color:#97a18d}.section-title p{font-size:10px;color:#8e9784;margin:6px 0 0}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.stat-card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:17px 18px;position:relative}.stat-icon{display:grid;place-items:center;width:27px;height:27px;border-radius:7px;margin-bottom:15px}.stat-icon svg{width:16px;height:16px}.stat-label{display:block;color:#818c76;font-size:10px;margin-bottom:7px}.stat-card strong{display:block;font-size:25px;font-weight:450;letter-spacing:-.7px;font-variant-numeric:tabular-nums}.stat-card strong span{font-size:11px;color:#929c87;letter-spacing:0}.stat-card small{display:block;margin-top:8px;font-size:8px;color:#9aa18f;line-height:1.5}.history{padding:22px 24px}.history-actions{display:flex;gap:16px;align-items:center}.history-actions select{padding:6px 7px;font-size:10px}.history table{width:100%;border-collapse:collapse;text-align:left}.history th{font-size:8px;letter-spacing:1px;color:#919b87;font-weight:500;border-bottom:1px solid var(--line);padding:12px 8px}.history td{padding:14px 8px;border-bottom:1px solid #eef0e7;font-size:11px;color:#65735b;vertical-align:middle}.history tr:last-child td{border-bottom:0}.history td:first-child strong{font-weight:500;display:block;max-width:260px;overflow:hidden;text-overflow:ellipsis}.history td small{display:block;color:#939d88;font-size:9px;margin-top:4px;max-width:260px;overflow:hidden;text-overflow:ellipsis}.attention-bar{height:5px;width:100%;min-width:90px;max-width:140px;background:#e8ecdf;display:flex;border-radius:5px;overflow:hidden;margin-bottom:5px}.attention-bar span:first-child{background:var(--sage)}.attention-bar span:nth-child(2){background:var(--amber)}.attention-bar span:last-child{background:var(--unknown)}.session-status{font-size:8px;background:#f0f3e9;padding:4px 7px;border-radius:4px;white-space:nowrap}.empty-history{text-align:center;padding:30px 20px 17px}.empty-history>svg{width:26px;height:26px;color:#a6b091;margin-bottom:8px}.empty-history h3{font:400 18px Georgia,serif;color:#8c997a;margin:0 0 8px}.empty-history p{font-size:10px;color:#a0a793;margin:0}footer{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-top:28px;color:#99a18e;font-size:9px}footer>span:last-child{font-size:8px;letter-spacing:1.4px}.footer-star{color:#b3c1a0;margin-left:8px}.wide{width:100%;justify-content:center}.dialog-intro{color:#829075;line-height:1.7;font-size:12px;margin:18px 0 25px}dialog{border:1px solid var(--line);border-radius:16px;background:var(--card);color:var(--ink);padding:30px;max-width:510px;width:calc(100% - 36px);box-shadow:0 20px 80px #1c372c25;max-height:90dvh;overflow:auto}dialog::backdrop{background:#19372c65;backdrop-filter:blur(4px)}.dialog-header{display:flex;justify-content:space-between;align-items:start;gap:12px}.dialog-header h2{font:400 27px Georgia,serif;letter-spacing:-.5px}.close-dialog{background:none;border:0;font-size:24px;color:#97a18d;line-height:1;padding:0 2px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px 16px;margin-bottom:22px}.form-grid label{font-size:11px;font-weight:500;display:block}.form-grid label>span{display:block;font-size:9px;color:#9aa28e;margin:4px 0 8px;font-weight:400}.form-grid input,.form-grid select{width:100%;padding:10px;font-size:12px}.switch-row{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:16px 0;border-top:1px solid var(--line)}.switch-row strong{display:block;font-size:11px;font-weight:500}.switch-row small{display:block;font-size:10px;color:#8f9a82;line-height:1.6;max-width:320px;margin-top:4px}.switch-row input{width:18px;height:18px;accent-color:var(--green);flex-shrink:0}#settingsForm>.button{margin-top:16px}.calibration-steps{display:grid;gap:12px}.calibration-steps>div{display:flex;align-items:center;gap:14px;background:#f1f4e9;border:1px solid #e5eada;border-radius:9px;padding:16px}.calibration-steps>div>span:first-child{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;border:1px solid #c8d3b5;color:#7f9368;font-size:11px}.calibration-steps h3{font-size:12px;font-weight:500;margin:0 0 5px}.calibration-steps p{font-size:10px;color:#8e9b7e;margin:0}.cal-check{margin-left:auto;color:#789361}.calibration-message{font-size:11px;color:#839473;line-height:1.6;margin:20px 0}.calibration-message.error{color:#b17b40}#calibrationDialog>.small-note{margin-top:18px}.help-content p{font-size:12px;line-height:1.8;color:#7e8b73;margin:18px 0}.help-content strong{font-weight:550;color:#48633d}.keyboard-help{padding-top:15px;border-top:1px solid var(--line)}.transition-stats{display:flex;gap:12px;margin-bottom:20px}.transition-stats>div{flex:1;padding:15px;background:#f1f4e9;border-radius:8px}.transition-stats strong{font-size:22px;display:block;font-weight:450}.transition-stats small{font-size:9px;color:#8e9b7e}.break-tip{display:flex;gap:10px;align-items:center;background:#eaf0df;border-radius:8px;padding:14px;font-size:11px;line-height:1.7;color:#82966d;margin:0 0 24px}#laterNext{margin-top:10px}.confirm-actions{display:flex;justify-content:flex-end;gap:10px}.toast{position:fixed;bottom:25px;left:calc(50% + 100px);transform:translateX(-50%);background:#274b39;color:#f3f6eb;border:1px solid #416347;box-shadow:0 6px 22px #1e362a20;border-radius:9px;padding:12px 20px;font-size:12px;max-width:90vw;z-index:20}.is-break .ring-progress{stroke:#c29d67}.is-break .countdown{color:#8a724d}.is-break .timer-overline{color:#aa9067}.is-break .mode-tabs button.selected{color:#9b7d4f}html{scroll-behavior:smooth;scroll-padding-top:20px}.history-table-wrap{overflow:auto}
+@media(min-width:1500px){main{padding-left:65px;padding-right:65px}.timer-wrap{width:310px;height:310px}.camera-view{aspect-ratio:1.6}}
+@media(max-width:1150px){.sidebar{width:196px;padding:32px 16px}.brand{font-size:20px;gap:8px}.brand-mark{width:32px;height:37px}.brand small{font-size:6px;letter-spacing:1.5px}main{margin-left:196px;padding:0 28px 22px}.study-grid{gap:16px;grid-template-columns:minmax(320px,1fr) minmax(285px,.9fr)}.timer-card{padding:22px 22px 18px}.camera-card{padding:19px 17px 15px}h1{font-size:33px}.stat-card{padding:15px 13px}.camera-view{aspect-ratio:1.3}.toast{left:calc(50% + 98px)}}
+@media(max-width:940px){.sidebar{width:76px;padding:26px 13px}.brand{padding:0;justify-content:center}.brand>span:last-child,.sidebar-label,.sidebar-bottom{display:none}nav{margin-top:43px}.nav-item{font-size:0;justify-content:center;padding:14px 0}.nav-item svg{width:20px;height:20px}.nav-dot{display:none}main{margin-left:76px;padding:0 24px 22px}.topbar{height:67px}.heading-row{margin-top:29px}.heading-row p{font-size:11px}.study-grid{grid-template-columns:minmax(300px,1fr) minmax(280px,.9fr)}.mode-tabs button{padding:8px 12px}.stats-grid{gap:10px}.stat-card small{font-size:8px}.toast{left:calc(50% + 38px)}}
+@media(max-width:740px){.sidebar{position:relative;inset:auto;width:auto;height:66px;flex-direction:row;padding:14px 20px;align-items:center;border-right:0;border-bottom:1px solid var(--line)}.brand{font-size:19px}.brand>span:last-child{display:block}.brand small{display:none}.brand-mark{height:32px;width:29px;border-radius:9px 9px 9px 3px}.brand-mark svg{width:22px;height:22px}nav{margin:0 0 0 auto;display:flex;gap:9px}.nav-item{width:36px;padding:9px;border-radius:6px}.nav-item svg{width:17px;height:17px}main{margin:0;padding:0 20px 20px}.topbar{height:54px}.breadcrumb{font-size:8px;gap:10px}.privacy-tag{font-size:9px}.privacy-tag svg{width:13px;height:13px}.heading-row{margin:26px 0 22px;align-items:start}.heading-row .button{font-size:0;padding:10px}.heading-row .button svg{width:16px;height:16px}.heading-row h1{font-size:31px;max-width:340px}.heading-row p{line-height:1.7;max-width:300px;font-size:11px}.study-grid{grid-template-columns:1fr;gap:17px}.timer-card{padding:22px 24px}.timer-wrap{width:280px;height:280px;margin:24px 0}.camera-view{aspect-ratio:1.65;min-height:210px}.right-stack{gap:15px}.camera-card{padding:22px}.goal-card{padding:20px 24px}.stats-grid{grid-template-columns:1fr 1fr;gap:10px}.stat-card{padding:18px}.stat-card small{font-size:9px}.history{padding:20px 17px}.history td,.history th{white-space:nowrap}.history td:first-child{min-width:135px}.history td:first-child strong,.history td small{max-width:170px}.section-title>span{font-size:8px}.history-actions{gap:10px}footer{font-size:8px;flex-wrap:wrap}footer .text-button{font-size:9px}.toast{left:50%;min-width:240px;text-align:center}.shortcut{font-size:8px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}.button:hover{transform:none}}
++
++/* Keep supporting text legible on the warm, light surfaces. */
++.caps,.eyebrow,.sidebar-label,.breadcrumb,.timer-overline,.timer-content>#timerCaption,.camera-message,.camera-empty p,.camera-empty small,.tracking-legend,.manual-row,.small-note,.stat-label,.stat-card small,.section-title>span,.history th,.history td small,.empty-history p,.timer-foot,.goal-card .caps,.goal-card p,.goal-numbers>span,.form-grid label>span,.dialog-intro,.switch-row small,.calibration-steps p,.calibration-message,.help-content p,footer{color:#68765e}
++.stat-card small,.small-note,.timer-foot,.history th,.tracking-legend,.camera-empty small{font-size:10px}
++.badge{color:#617057}.block-chip{color:#617057}.intention-fields input::placeholder{color:#737f69}.intention-fields #intention{color:#68765e}.mode-tabs button{color:#647258}.goal-card .caps{font-size:8px}.goal-card p{font-size:10px}.camera-empty p{font-size:11px}.empty-history p{font-size:11px}.timer-content>#timerCaption{font-size:11px}.sidebar-bottom .local-label{color:#67765b}.stat-card strong span{color:#68765e}.badge.on{color:#507040}
++EOF
+.task-progress-section{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0;margin-bottom:10px}.task-progress-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}.task-progress-heading h3{font-size:13px;font-weight:500;margin:0}.task-progress-heading>span{font-size:10px;color:#68765e}.task-progress-row{display:grid;grid-template-columns:minmax(100px,160px) minmax(60px,1fr) 70px;gap:15px;align-items:center;margin-top:15px}.task-progress-name{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:11px;color:#536849}.task-progress-time{text-align:right;font-size:10px;color:#68765e;font-variant-numeric:tabular-nums}.task-progress-track{height:8px;border-radius:4px;overflow:hidden;background:#eff2e9;display:flex}.task-progress-track span:nth-child(1){background:var(--sage)}.task-progress-track span:nth-child(2){background:var(--amber)}.task-progress-track span:nth-child(3){background:var(--unknown)}@media(max-width:500px){.task-progress-heading{align-items:start;flex-direction:column;gap:7px}.task-progress-row{grid-template-columns:95px minmax(45px,1fr) 55px;gap:8px}.task-progress-section>.small-note{font-size:9px}.task-progress-time{font-size:9px}}
+</style>
+</head>
+<body>
+<svg class="icon-defs" aria-hidden="true"><defs>
+  <symbol id="leaf" viewBox="0 0 24 24"><path d="M20 4C10 2 3 7 5 15c1 4 8 6 12 1 3-4 3-8 3-12Z"/><path d="M4 21 15 10"/></symbol>
+  <symbol id="timer" viewBox="0 0 24 24"><circle cx="12" cy="14" r="8"/><path d="M9 2h6m-3 4V2m0 8v4l3 2m4-11 2 2"/></symbol>
+  <symbol id="chart" viewBox="0 0 24 24"><path d="M4 4v16h16M8 16v-4m5 4V8m5 8V5"/></symbol>
+  <symbol id="settings" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3"/><circle cx="15" cy="17" r="3"/></symbol>
+  <symbol id="camera" viewBox="0 0 24 24"><rect x="3" y="5" width="13" height="14" rx="3"/><path d="m16 10 5-3v10l-5-3"/></symbol>
+  <symbol id="shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9S4 17 4 12V6Z"/><path d="m8 12 3 3 5-6"/></symbol>
+  <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  <symbol id="book" viewBox="0 0 24 24"><path d="M12 6C8 3 3 4 3 4v15s5-1 9 2c4-3 9-2 9-2V4s-5-1-9 2Zm0 0v15"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4"/></symbol>
+  <symbol id="eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="download" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M4 17v4h16v-4"/></symbol>
+</defs></svg>
+<aside class="sidebar">
+  <a href="#" class="brand"><span class="brand-mark"><svg><use href="#leaf"/></svg></span><span>focus<span class="brand-light">studio</span><small>A LITTLE MORE PRESENT</small></span></a>
+  <div class="sidebar-label">YOUR SPACE</div>
+  <nav aria-label="Main navigation">
+    <a href="#workspace" class="nav-item active"><svg><use href="#timer"/></svg>Study room<span class="nav-dot"></span></a>
+    <a href="#insights" class="nav-item"><svg><use href="#chart"/></svg>Your progress</a>
+    <button class="nav-item" id="openSettings"><svg><use href="#settings"/></svg>Session settings</button>
+  </nav>
+  <div class="sidebar-bottom"><div class="plant" aria-hidden="true"><svg viewBox="0 0 120 105"><path d="M60 77V26M60 59C25 59 23 35 26 32c20-3 34 12 34 27Zm0-16c0-22 15-31 28-28 3 15-6 28-28 28Zm0 27c1-19 22-26 34-22 0 15-15 23-34 22Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M42 77h36l-6 25H48Z" fill="#dfe9d5"/></svg></div><p>Make room for<br><em>meaningful work.</em></p><button class="text-button" id="openHelp">How tracking works <span>↗</span></button><div class="local-label"><span></span> Saved on your device</div></div>
+</aside>
+<main id="workspace">
+  <header class="topbar"><span class="breadcrumb">YOUR STUDY ROOM <span>/</span> <span id="todayLabel"></span></span><span class="privacy-tag"><svg><use href="#shield"/></svg>Private by design</span></header>
+  <div class="heading-row"><div><div class="eyebrow">ONE THING AT A TIME</div><h1>Let’s make space to focus.</h1><p>A clear intention. A little momentum. A well-earned break.</p></div><button class="button subtle" id="topSettings"><svg><use href="#settings"/></svg> Customize</button></div>
+
+  <section class="study-grid" aria-label="Study workspace">
+    <div class="timer-card card">
+      <div class="timer-card-top"><span class="caps">YOUR NEXT SMALL WIN</span><span class="block-chip" id="blockLabel">Block 1 of 4</span></div>
+      <div class="intention-fields"><label for="subject">What are you working on?</label><input id="subject" list="taskSuggestions" maxlength="100" placeholder="e.g. Biology · Chapter 8" autocomplete="off"><datalist id="taskSuggestions"></datalist><input id="intention" maxlength="300" placeholder="One small goal for this block…" aria-label="Goal for this study block"></div>
+      <div class="mode-tabs" role="group" aria-label="Timer mode"><button data-mode="study" class="selected" aria-pressed="true">Focus</button><button data-mode="shortBreak" aria-pressed="false">Short break</button><button data-mode="longBreak" aria-pressed="false">Long break</button></div>
+      <div class="timer-wrap"><svg class="timer-ring" viewBox="0 0 300 300" aria-hidden="true"><circle class="ring-track" cx="150" cy="150" r="137"/><circle id="ringProgress" class="ring-progress" cx="150" cy="150" r="137"/></svg><div class="timer-content"><span class="timer-overline" id="timerOverline">TIME TO SETTLE IN</span><span id="countdown" class="countdown" role="timer" aria-label="50 minutes remaining">50:00</span><span id="timerCaption">A fresh start, whenever you’re ready.</span><div class="cycle-dots" id="cycleDots" aria-label="0 study blocks completed"></div></div></div>
+      <div class="timer-actions"><button class="button primary" id="startPause">Start focusing <svg><use href="#arrow"/></svg></button><button class="icon-button" id="resetTimer" aria-label="Reset timer" title="Reset timer">↺</button></div>
+      <button id="endSession" class="text-button finish-button" hidden>Finish this block early</button>
+      <div class="timer-foot"><span><span class="tiny-dot"></span><span id="nextBreak">15 min break comes next</span></span><span class="shortcut"><kbd>space</kbd> to pause</span></div>
+    </div>
+
+    <div class="right-stack">
+      <section class="camera-card card" aria-label="Attention tracking"><div class="card-heading"><div><svg><use href="#eye"/></svg><h2>Stay in the moment</h2></div><span class="badge" id="cameraBadge">CAMERA OFF</span></div>
+        <div class="camera-view" id="cameraView"><video id="video" autoplay muted playsinline aria-label="Local camera preview"></video><canvas id="overlay" aria-hidden="true"></canvas><div class="camera-empty" id="cameraEmpty"><span class="camera-icon"><svg><use href="#camera"/></svg></span><h3>A gentle check-in.</h3><p>Your screen and your notes both count.<br>Your camera helps estimate attention.</p><button class="button camera-enable" id="enableCamera"><svg><use href="#camera"/></svg> Enable camera</button><small>Optional · No video saved or uploaded</small></div><span id="liveStatus" class="live-status" hidden><span class="tiny-dot"></span><span id="liveStatusText">Getting ready</span></span></div>
+        <div id="cameraMessage" class="camera-message" role="status">You can also study without a camera.</div>
+        <div class="tracking-legend"><span><span class="dot green"></span>Screen</span><span><span class="dot sage"></span>Notes</span><span><span class="dot amber"></span>Phone / away</span></div>
+        <div class="camera-controls" id="cameraControls" hidden><button class="text-button" id="calibrateCamera">Calibrate viewing positions</button><button class="text-button" id="disableCamera">Turn off</button></div>
+        <div class="manual-row"><label for="trackingMode">Tracking mode</label><select id="trackingMode"><option value="auto">Automatic estimate</option><option value="focus">Manual: studying</option><option value="distracted">Manual: distracted</option></select></div>
+        <div id="phoneModelStatus" class="small-note">Phone detection starts when you enable the camera.</div>
+      </section>
+      <section class="goal-card"><span class="goal-symbol" aria-hidden="true">✦</span><div><div class="caps">A LITTLE EVERY DAY</div><h3>Your daily focus goal</h3><div class="goal-numbers"><strong id="goalMinutes">0</strong><span> / <span id="goalTarget">180</span> minutes</span></div><div class="goal-track"><div id="goalProgress"></div></div><p id="goalMessage">Small steps add up. Start with this one.</p></div></section>
+    </div>
+  </section>
+
+  <section id="insights" class="insights"><div class="section-title"><h2>Today, at a glance</h2><span id="saveStatus" role="status">Saved in this browser</span></div><div class="stats-grid"><article class="stat-card"><span class="stat-icon green"><svg><use href="#leaf"/></svg></span><span class="stat-label">Focused time</span><strong id="focusedStat">0<span> min</span></strong><small>Screen + notes + manual study</small></article><article class="stat-card"><span class="stat-icon amber"><svg><use href="#phone"/></svg></span><span class="stat-label">Distracted time</span><strong id="distractedStat">0<span> min</span></strong><small>Phone, looking away, or manual</small></article><article class="stat-card"><span class="stat-icon neutral"><svg><use href="#eye"/></svg></span><span class="stat-label">Unobserved time</span><strong id="unknownStat">0<span> min</span></strong><small>Camera off or uncertain view</small></article><article class="stat-card"><span class="stat-icon sage"><svg><use href="#chart"/></svg></span><span class="stat-label">Observed focus rate</span><strong id="rateStat">—</strong><small id="coverageLabel">No observed study time yet</small></article></div></section>
+
+  <section class="history card"><div class="section-title"><div><h2>Your study journal</h2><p>A record of showing up.</p></div><div class="history-actions"><select id="historyFilter" aria-label="Filter study journal"><option value="today">Today</option><option value="7">7 days</option><option value="30">30 days</option><option value="all">All sessions</option></select><a href="#" class="text-button" id="exportCsv"><svg><use href="#download"/></svg> Export</a></div></div><div class="task-progress-section"><div class="task-progress-heading"><h3>Where your time went</h3><span id="rangeTotal"></span></div><p class="small-note">Selected range · green: focused · gold: distracted · gray: unobserved</p><div id="taskProgress"></div></div><div class="history-table-wrap"><table><thead><tr><th>SESSION</th><th>STUDY TIME</th><th>FOCUSED</th><th>ATTENTION</th><th>STATUS</th></tr></thead><tbody id="historyBody"></tbody></table></div><div class="empty-history" id="emptyHistory"><svg><use href="#book"/></svg><h3>Your first block is a fresh page.</h3><p>Start a session above. Your progress will find a home here.</p></div></section>
+  <footer><span>Built for presence, not perfection. History stays in this browser.</span><button class="text-button" id="footerHelp">About attention estimates</button><span>FOCUS STUDIO <span class="footer-star">✦</span></span></footer>
+</main>
+
+<dialog id="settingsDialog"><form id="settingsForm"><div class="dialog-header"><div><div class="eyebrow">MAKE IT YOURS</div><h2>Your study rhythm</h2></div><button type="button" class="close-dialog" aria-label="Close settings">×</button></div><p class="dialog-intro">A sustainable pace beats a perfect plan. Changes apply to the next block.</p><div class="form-grid"><label>Study block <span>minutes</span><input name="study" type="number" min="1" max="180" required></label><label>Short break <span>minutes</span><input name="shortBreak" type="number" min="1" max="60" required></label><label>Long break <span>minutes</span><select name="longBreak"><option value="30">30 minutes</option><option value="60">1 hour</option></select></label><label>Long break after <span>study blocks</span><input name="longEvery" type="number" min="1" max="12" required></label><label>Daily focus goal <span>minutes</span><input name="goal" type="number" min="1" max="720" required></label><label>Viewing tolerance <span>lower = stricter</span><select name="sensitivity"><option value="0.8">Strict</option><option value="1">Balanced</option><option value="1.3">Relaxed</option></select></label></div><label class="switch-row"><span><strong>End-of-block sound</strong><small>A soft chime when it’s time to switch.</small></span><input name="sound" type="checkbox" role="switch"></label><label class="switch-row"><span><strong>Visible phone detection</strong><small>A visible phone counts as distracted. Move unused phones out of view.</small></span><input name="phoneTracking" type="checkbox" role="switch"></label><button class="button primary wide" type="submit">Save my rhythm <svg><use href="#check"/></svg></button><button type="button" class="text-button wide" id="resetCycle">Restart break cycle from block 1</button></form></dialog>
+<dialog id="calibrationDialog"><div class="dialog-header"><div><div class="eyebrow">TWO PLACES TO FOCUS</div><h2>Find your viewing positions</h2></div><button class="close-dialog" aria-label="Close calibration">×</button></div><p class="dialog-intro">Keep your laptop and notes where you normally study. Use good lighting. Recalibrate whenever you move your camera.</p><div class="calibration-steps"><div id="screenStep"><span>1</span><div><h3>Look at your screen</h3><p>Read the center of this window naturally.</p></div><span class="cal-check" id="screenCheck"></span></div><div id="notesStep"><span>2</span><div><h3>Look at your paper notes</h3><p>Place them on your desk, with your face visible.</p></div><span class="cal-check" id="notesCheck"></span></div></div><p id="calibrationMessage" class="calibration-message" role="status">We’ll sample each position for 3 seconds.</p><button class="button primary wide" id="captureCalibration">Capture screen position <svg><use href="#eye"/></svg></button><p class="small-note">This learns viewing positions, not the content of your notes. If your face disappears while reading, use “Manual: studying.”</p></dialog>
+<dialog id="transitionDialog"><div class="dialog-header"><div><div class="eyebrow" id="transitionEyebrow">A MOMENT TO RESET</div><h2 id="transitionTitle">That’s a block in the books.</h2></div><button class="close-dialog" aria-label="Close session summary">×</button></div><p id="transitionMessage" class="dialog-intro"></p><div id="transitionStats" class="transition-stats"></div><div class="break-tip"><svg><use href="#leaf"/></svg><span id="breakTip">Stand up, get some water, and give your eyes a different view.</span></div><button class="button primary wide" id="startNext">Start my break <svg><use href="#arrow"/></svg></button><button class="text-button wide" id="laterNext">I’ll start when I’m ready</button></dialog>
+<dialog id="helpDialog"><div class="dialog-header"><div><div class="eyebrow">HONEST BY DESIGN</div><h2>A guide, not a grade.</h2></div><button class="close-dialog" aria-label="Close attention guide">×</button></div><div class="help-content"><p>Focus Studio estimates attention from <strong>eye position and head direction</strong>. It compares your current view with your calibrated screen and notes positions. It cannot measure comprehension or prove that you’re studying.</p><p><strong>Focused:</strong> your face matches a calibrated viewing position, or you choose manual studying. <strong>Distracted:</strong> a phone is visible, your view stays outside both positions, or you choose manual distracted. <strong>Unobserved:</strong> the camera is off, the view is uncertain, this tab is hidden, or the computer sleeps.</p><p>A webcam cannot reliably distinguish reading notes from a phone held out of view. Glasses, lighting, posture, and camera angle affect accuracy. Brief blinks and glances are smoothed. Tune the viewing tolerance or use manual tracking when needed.</p><p><strong>Observed focus rate</strong> is focused ÷ (focused + distracted). Coverage tells you how much study time was observed. Breaks and pauses never count as study time.</p><p>Your camera is optional and starts only when you enable it. Images are processed in your browser; your study totals stay in this browser. Video and audio are never recorded. Model libraries download from jsDelivr and Google when first enabled; internet is required for camera models. If your browser blocks the models, manual tracking still works.</p><p>This app has no accounts. Anyone using this browser profile can see its saved journal. Your journal and calibration stay in this browser. They do not sync between devices. Export your journal before clearing browser data.</p><p class="keyboard-help"><kbd>Space</kbd> start / pause · <kbd>F</kbd> manual study · <kbd>D</kbd> manual distracted · <kbd>A</kbd> automatic</p></div></dialog>
+<dialog id="confirmDialog"><div class="dialog-header"><h2 id="confirmTitle">Finish this block?</h2><button class="close-dialog" aria-label="Cancel">×</button></div><p id="confirmMessage" class="dialog-intro"></p><div class="confirm-actions"><button id="confirmCancel" class="button subtle">Keep studying</button><button id="confirmAction" class="button primary">Finish & save</button></div></dialog>
+<div id="toast" class="toast" role="status" hidden></div>
+<script>
+(() => {
+'use strict';
+const FACE_WORKER_SOURCE = "// Pure timing and attention logic, shared with the camera worker and tests.\nconst STATES = ['focus', 'distracted', 'unknown'];\nfunction sessionsInRange(records, range, today) {\n  if (range === 'all') return records;\n  const days = range === 'today' ? 1 : Number(range);\n  if (![1, 7, 30].includes(days)) return [];\n  // Subtract calendar days in UTC to keep daylight-saving changes out of the date math.\n  const cutoff = new Date(`${today}T00:00:00Z`);\n  cutoff.setUTCDate(cutoff.getUTCDate() - days + 1);\n  const start = cutoff.toISOString().slice(0, 10);\n  return records.filter(s => s.local_day >= start && s.local_day <= today);\n}\n\nfunction taskTotals(records) {\n  const totals = new Map();\n  for (const s of records) {\n    const entry = totals.get(s.subject) || { subject: s.subject, duration: 0, focused: 0, distracted: 0, unknown: 0, sessions: 0 };\n    for (const key of ['duration', 'focused', 'distracted', 'unknown']) entry[key] += s[key];\n    entry.sessions++;\n    totals.set(s.subject, entry);\n  }\n  return [...totals.values()].sort((a, b) => b.duration - a.duration);\n}\nclass StudyClock {\n  constructor(seconds, restored = null) {\n    this.planned = seconds;\n    this.elapsed = 0;\n    this.running = false;\n    this.lastTick = null;\n    this.totals = { focus: 0, distracted: 0, unknown: 0, manual: 0 };\n    if (restored) {\n      this.planned = restored.planned;\n      this.elapsed = restored.elapsed;\n      this.totals = { ...restored.totals };\n    }\n  }\n  get remaining() { return Math.max(0, this.planned - this.elapsed); }\n  start(now) { if (!this.remaining) return; this.running = true; this.lastTick = now; }\n  tick(now, attention = 'unknown', manual = false) {\n    if (!this.running) return false;\n    const gap = Math.max(0, (now - this.lastTick) / 1000);\n    this.lastTick = now;\n    const delta = Math.min(gap, this.remaining);\n    // Sleeping / background-throttled intervals cannot be reliably observed.\n    const state = gap > 3 || !STATES.includes(attention) ? 'unknown' : attention;\n    this.totals[state] += delta;\n    if (manual && state !== 'unknown') this.totals.manual += delta;\n    this.elapsed += delta;\n    if (this.remaining <= .00001) {\n      this.elapsed = this.planned;\n      this.running = false;\n      return true;\n    }\n    return false;\n  }\n  pause(now, attention, manual) { const ended = this.tick(now, attention, manual); this.running = false; return ended; }\n  snapshot() { return { planned: this.planned, elapsed: this.elapsed, totals: { ...this.totals } }; }\n}\n\nconst distance = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);\nfunction faceFeatures(points) {\n  if (!points || points.length < 478) return null;\n  if (distance(points[234], points[454]) < .10) return null;\n  const eye = (a, b, upper, lower, iris) => {\n    const p = points[a], q = points[b], i = points[iris];\n    const width = distance(p, q);\n    const dx = (q.x - p.x) / width, dy = (q.y - p.y) / width;\n    const cx = (p.x + q.x) / 2, cy = (p.y + q.y) / 2;\n    return { x: ((i.x - cx) * dx + (i.y - cy) * dy) / width,\n      y: (-(i.x - cx) * dy + (i.y - cy) * dx) / width,\n      open: distance(points[upper], points[lower]) / width, center: { x: cx, y: cy } };\n  };\n  const l = eye(33, 133, 159, 145, 468), r = eye(362, 263, 386, 374, 473);\n  const eyeWidth = distance(l.center, r.center);\n  const mx = (l.center.x + r.center.x) / 2, my = (l.center.y + r.center.y) / 2;\n  const dx = (r.center.x - l.center.x) / eyeWidth, dy = (r.center.y - l.center.y) / eyeWidth;\n  const nose = points[1];\n  const yaw = ((nose.x - mx) * dx + (nose.y - my) * dy) / eyeWidth;\n  const pitch = (-(nose.x - mx) * dy + (nose.y - my) * dx) / distance(points[10], points[152]);\n  const vector = [(l.x + r.x) / 2, (l.y + r.y) / 2, yaw, pitch];\n  if (vector.some(x => !Number.isFinite(x))) return null;\n  return { vector, eyesOpen: (l.open + r.open) / 2 > .10 };\n}\n\nfunction profileFromSamples(samples) {\n  if (samples.length < 10) throw new Error('Keep your face visible for the whole capture, then try again.');\n  const mean = samples[0].map((_, i) => samples.reduce((sum, s) => sum + s[i], 0) / samples.length);\n  const deviation = mean.map((m, i) => Math.sqrt(samples.reduce((sum, s) => sum + (s[i] - m) ** 2, 0) / samples.length));\n  if (deviation.some((v, i) => v > [ .1, .08, .15, .09 ][i])) {\n    throw new Error('Your viewing position moved too much. Settle into one position and try again.');\n  }\n  return { mean, deviation };\n}\n\nfunction classifyView(feature, profiles, sensitivity = 1) {\n  if (!feature || !feature.eyesOpen || !profiles?.screen) return { state: 'unknown', reason: 'Uncertain view' };\n  const base = [.12, .075, .16, .085];\n  let best = null;\n  for (const [name, profile] of Object.entries(profiles)) {\n    if (!['screen', 'notes'].includes(name) || !Array.isArray(profile?.mean) || profile.mean.length !== 4) continue;\n    const score = Math.sqrt(feature.vector.reduce((sum, x, i) => {\n      const tolerance = Math.max(base[i], (profile.deviation?.[i] || 0) * 3) * sensitivity;\n      return sum + ((x - profile.mean[i]) / tolerance) ** 2;\n    }, 0) / 4);\n    if (!best || score < best.score) best = { name, score };\n  }\n  if (!best) return { state: 'unknown', reason: 'Calibrate first' };\n  return best.score <= 1 ? { state: 'focus', reason: best.name === 'screen' ? 'Screen focus' : 'Notes focus' }\n    : { state: 'distracted', reason: 'Looking away (estimate)' };\n}\n\n// MediaPipe's WASM loader uses importScripts, so this must be a classic worker.\nlet model = null;\nself.onmessage = async ({ data }) => {\n  if (data.type === 'init') {\n    try {\n      const { FaceLandmarker, FilesetResolver } = await import('https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.21/vision_bundle.mjs');\n      const files = await FilesetResolver.forVisionTasks('https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.21/wasm');\n      model = await FaceLandmarker.createFromOptions(files, {\n        baseOptions: { modelAssetPath: 'https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task', delegate: 'CPU' },\n        runningMode: 'VIDEO', numFaces: 2, minFaceDetectionConfidence: .65,\n        minFacePresenceConfidence: .65, minTrackingConfidence: .65\n      });\n      self.postMessage({ type: 'ready' });\n    } catch (error) { self.postMessage({ type: 'error', message: error.message }); }\n  }\n  if (data.type === 'frame') {\n    try {\n      const result = model.detectForVideo(data.frame, data.timestamp);\n      const faces = result.faceLandmarks;\n      self.postMessage({ type: 'result', feature: faces.length === 1 ? faceFeatures(faces[0]) : null,\n        faceCount: faces.length });\n    } catch (error) { self.postMessage({ type: 'error', message: error.message }); }\n    finally { data.frame.close(); }\n  }\n};\n";
+const FACE_WORKER_URL = URL.createObjectURL(new Blob([FACE_WORKER_SOURCE], {type:'text/javascript'}));
+
+// Pure timing and attention logic, shared with the camera worker and tests.
+const STATES = ['focus', 'distracted', 'unknown'];
+function sessionsInRange(records, range, today) {
+  if (range === 'all') return records;
+  const days = range === 'today' ? 1 : Number(range);
+  if (![1, 7, 30].includes(days)) return [];
+  // Subtract calendar days in UTC to keep daylight-saving changes out of the date math.
+  const cutoff = new Date(`${today}T00:00:00Z`);
+  cutoff.setUTCDate(cutoff.getUTCDate() - days + 1);
+  const start = cutoff.toISOString().slice(0, 10);
+  return records.filter(s => s.local_day >= start && s.local_day <= today);
+}
+
+function taskTotals(records) {
+  const totals = new Map();
+  for (const s of records) {
+    const entry = totals.get(s.subject) || { subject: s.subject, duration: 0, focused: 0, distracted: 0, unknown: 0, sessions: 0 };
+    for (const key of ['duration', 'focused', 'distracted', 'unknown']) entry[key] += s[key];
+    entry.sessions++;
+    totals.set(s.subject, entry);
+  }
+  return [...totals.values()].sort((a, b) => b.duration - a.duration);
+}
+class StudyClock {
+  constructor(seconds, restored = null) {
+    this.planned = seconds;
+    this.elapsed = 0;
+    this.running = false;
+    this.lastTick = null;
+    this.totals = { focus: 0, distracted: 0, unknown: 0, manual: 0 };
+    if (restored) {
+      this.planned = restored.planned;
+      this.elapsed = restored.elapsed;
+      this.totals = { ...restored.totals };
+    }
+  }
+  get remaining() { return Math.max(0, this.planned - this.elapsed); }
+  start(now) { if (!this.remaining) return; this.running = true; this.lastTick = now; }
+  tick(now, attention = 'unknown', manual = false) {
+    if (!this.running) return false;
+    const gap = Math.max(0, (now - this.lastTick) / 1000);
+    this.lastTick = now;
+    const delta = Math.min(gap, this.remaining);
+    // Sleeping / background-throttled intervals cannot be reliably observed.
+    const state = gap > 3 || !STATES.includes(attention) ? 'unknown' : attention;
+    this.totals[state] += delta;
+    if (manual && state !== 'unknown') this.totals.manual += delta;
+    this.elapsed += delta;
+    if (this.remaining <= .00001) {
+      this.elapsed = this.planned;
+      this.running = false;
+      return true;
+    }
+    return false;
+  }
+  pause(now, attention, manual) { const ended = this.tick(now, attention, manual); this.running = false; return ended; }
+  snapshot() { return { planned: this.planned, elapsed: this.elapsed, totals: { ...this.totals } }; }
+}
+
+const distance = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
+function faceFeatures(points) {
+  if (!points || points.length < 478) return null;
+  if (distance(points[234], points[454]) < .10) return null;
+  const eye = (a, b, upper, lower, iris) => {
+    const p = points[a], q = points[b], i = points[iris];
+    const width = distance(p, q);
+    const dx = (q.x - p.x) / width, dy = (q.y - p.y) / width;
+    const cx = (p.x + q.x) / 2, cy = (p.y + q.y) / 2;
+    return { x: ((i.x - cx) * dx + (i.y - cy) * dy) / width,
+      y: (-(i.x - cx) * dy + (i.y - cy) * dx) / width,
+      open: distance(points[upper], points[lower]) / width, center: { x: cx, y: cy } };
+  };
+  const l = eye(33, 133, 159, 145, 468), r = eye(362, 263, 386, 374, 473);
+  const eyeWidth = distance(l.center, r.center);
+  const mx = (l.center.x + r.center.x) / 2, my = (l.center.y + r.center.y) / 2;
+  const dx = (r.center.x - l.center.x) / eyeWidth, dy = (r.center.y - l.center.y) / eyeWidth;
+  const nose = points[1];
+  const yaw = ((nose.x - mx) * dx + (nose.y - my) * dy) / eyeWidth;
+  const pitch = (-(nose.x - mx) * dy + (nose.y - my) * dx) / distance(points[10], points[152]);
+  const vector = [(l.x + r.x) / 2, (l.y + r.y) / 2, yaw, pitch];
+  if (vector.some(x => !Number.isFinite(x))) return null;
+  return { vector, eyesOpen: (l.open + r.open) / 2 > .10 };
+}
+
+function profileFromSamples(samples) {
+  if (samples.length < 10) throw new Error('Keep your face visible for the whole capture, then try again.');
+  const mean = samples[0].map((_, i) => samples.reduce((sum, s) => sum + s[i], 0) / samples.length);
+  const deviation = mean.map((m, i) => Math.sqrt(samples.reduce((sum, s) => sum + (s[i] - m) ** 2, 0) / samples.length));
+  if (deviation.some((v, i) => v > [ .1, .08, .15, .09 ][i])) {
+    throw new Error('Your viewing position moved too much. Settle into one position and try again.');
+  }
+  return { mean, deviation };
+}
+
+function classifyView(feature, profiles, sensitivity = 1) {
+  if (!feature || !feature.eyesOpen || !profiles?.screen) return { state: 'unknown', reason: 'Uncertain view' };
+  const base = [.12, .075, .16, .085];
+  let best = null;
+  for (const [name, profile] of Object.entries(profiles)) {
+    if (!['screen', 'notes'].includes(name) || !Array.isArray(profile?.mean) || profile.mean.length !== 4) continue;
+    const score = Math.sqrt(feature.vector.reduce((sum, x, i) => {
+      const tolerance = Math.max(base[i], (profile.deviation?.[i] || 0) * 3) * sensitivity;
+      return sum + ((x - profile.mean[i]) / tolerance) ** 2;
+    }, 0) / 4);
+    if (!best || score < best.score) best = { name, score };
+  }
+  if (!best) return { state: 'unknown', reason: 'Calibrate first' };
+  return best.score <= 1 ? { state: 'focus', reason: best.name === 'screen' ? 'Screen focus' : 'Notes focus' }
+    : { state: 'distracted', reason: 'Looking away (estimate)' };
+}
+
+function validSession(record) {
+  if (!record || typeof record !== 'object' || typeof record.id !== 'string' || !record.id) return false;
+  if (!['active', 'completed', 'ended'].includes(record.status)) return false;
+  if (typeof record.started_at !== 'string' || !Number.isFinite(Date.parse(record.started_at))) return false;
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(record.local_day || '')) return false;
+  if (typeof record.subject !== 'string' || record.subject.length > 100) return false;
+  if (typeof record.intention !== 'string' || record.intention.length > 300) return false;
+  if (['duration', 'focused', 'distracted', 'unknown', 'manual'].some(key =>
+    typeof record[key] !== 'number' || !Number.isFinite(record[key]) || record[key] < 0 || record[key] > 10800)) return false;
+  return Math.abs(record.focused + record.distracted + record.unknown - record.duration) < .05 && record.manual <= record.duration;
+}
+
+class BrowserStore {
+  constructor(storage, prefix, defaults) {
+    this.storage = storage; this.prefix = prefix; this.defaults = { ...defaults };
+  }
+  read(key, fallback) {
+    try { return JSON.parse(this.storage.getItem(this.prefix + key)) ?? fallback; } catch { return fallback; }
+  }
+  write(key, value) {
+    try { this.storage.setItem(this.prefix + key, JSON.stringify(value)); }
+    catch { throw new Error('Browser storage is unavailable or full. Export your journal before closing this page.'); }
+  }
+  settings() {
+    const saved = this.read('settings-v1', {});
+    try { return this.validateSettings({ ...this.defaults, ...saved }); } catch { return { ...this.defaults }; }
+  }
+  validateSettings(data) {
+    const limits = { study:[1,180], shortBreak:[1,60], longBreak:[1,120], longEvery:[1,12], goal:[1,720], sensitivity:[.6,1.6] };
+    for (const [name, [low,high]] of Object.entries(limits)) {
+      if (!Number.isFinite(data[name]) || data[name] < low || data[name] > high || (name !== 'sensitivity' && !Number.isInteger(data[name]))) throw new Error(`Please enter a valid ${name} setting.`);
+    }
+    if (typeof data.sound !== 'boolean' || typeof data.phoneTracking !== 'boolean') throw new Error('Invalid toggle setting.');
+    return Object.fromEntries(Object.keys(this.defaults).map(key => [key, data[key]]));
+  }
+  saveSettings(data) { const valid = this.validateSettings(data); this.write('settings-v1', valid); return valid; }
+  sessions() {
+    const saved = this.read('journal-v1', []);
+    return (Array.isArray(saved) ? saved : []).filter(validSession).sort((a,b) => b.started_at.localeCompare(a.started_at));
+  }
+  saveSession(id, data) {
+    if (id !== data.id || !validSession(data)) throw new Error('The study record is invalid. Export your journal and reload the page.');
+    const records = this.sessions(), old = records.find(item => item.id === id);
+    if (old && (['duration','focused','distracted','unknown','manual'].some(key => data[key] < old[key] - .01)
+        || (old.status !== 'active' && data.status === 'active') || old.started_at !== data.started_at || old.local_day !== data.local_day)) {
+      const error = new Error('A newer study record is already saved.'); error.status = 409; throw error;
+    }
+    this.write('journal-v1', [{ ...data }, ...records.filter(item => item.id !== id)]);
+    return { saved: true };
+  }
+}
+
+function csvForSessions(records) {
+  const escape = value => {
+    let text = String(value ?? '');
+    if (/^[\s]*[=+\-@]/.test(text)) text = "'" + text;
+    return `"${text.replaceAll('"', '""')}"`;
+  };
+  const rows = [['Started','Local day','Subject','Intention','Study minutes','Focused minutes','Distracted minutes','Unobserved minutes','Manual minutes','Status']];
+  for (const record of records) rows.push([record.started_at,record.local_day,record.subject,record.intention,
+    ...['duration','focused','distracted','unknown','manual'].map(key => (record[key] / 60).toFixed(3)),record.status]);
+  return '\ufeff' + rows.map(row => row.map(escape).join(',')).join('\r\n');
+}
+
+
+function loadScript(src) {
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    const timeout = setTimeout(() => reject(new Error('Model library download timed out. Check your internet connection.')), 60000);
+    script.src = src; script.crossOrigin = 'anonymous';
+    script.onload = () => { clearTimeout(timeout); resolve(); };
+    script.onerror = () => { clearTimeout(timeout); reject(new Error('Model library could not download. Check your internet connection.')); };
+    document.head.append(script);
+  });
+}
+class AttentionCamera {
+  constructor(video, canvas, onChange, onPhoneStatus) {
+    this.video = video; this.canvas = canvas; this.onChange = onChange; this.onPhoneStatus = onPhoneStatus;
+    this.active = false; this.generation = 0; this.worker = null; this.workerBusy = false;
+    this.feature = null; this.lastFeatureAt = 0; this.faceCount = 0;
+    this.profiles = this.readProfiles(); this.sensitivity = 1; this.phoneTracking = true;
+    this.phoneModel = null; this.phonePromise = null; this.phoneBusy = false; this.phoneHits = 0;
+    this.phoneUntil = 0; this.phoneAvailable = false; this.lastPhoneAt = 0;
+    this.breakMode = false; this.lastFrameAt = 0; this.timer = null;
+    this.candidate = null; this.candidateSince = 0; this.stable = { state: 'unknown', reason: 'Camera off' };
+    this.samples = null;
+  }
+  readProfiles() {
+    try {
+      const p = read('focus-studio-calibration-v1', null);
+      if (!p || !p.screen) return {};
+      for (const profile of Object.values(p)) {
+        if (!Array.isArray(profile.mean) || profile.mean.length !== 4 || profile.mean.some(x => !Number.isFinite(x))) return {};
+      }
+      return p;
+    } catch { return {}; }
+  }
+  async start() {
+    if (this.active) return;
+    const generation = ++this.generation;
+    if (!navigator.mediaDevices?.getUserMedia) throw new Error('Open the HTTPS website in Chrome or Edge to use your camera.');
+    let stream;
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({ video: { width: { ideal: 640 }, height: { ideal: 480 }, frameRate: { ideal: 15, max: 20 } }, audio: false });
+      if (generation !== this.generation) { stream.getTracks().forEach(track => track.stop()); return; }
+      this.stream = stream; this.video.srcObject = stream; await this.video.play();
+      stream.getVideoTracks()[0].addEventListener('ended', () => {
+        if (this.active) { this.stop(); this.onChange({ state: 'unknown', reason: 'Camera disconnected. Enable it again when ready.' }); }
+      });
+      this.worker = new Worker(FACE_WORKER_URL);
+      await new Promise((resolve, reject) => {
+        const timeout = setTimeout(() => reject(new Error('Camera model took too long to load. Check your internet connection.')), 90000);
+        this.worker.onerror = () => { clearTimeout(timeout); reject(new Error('Camera model could not start. Try Chrome or Edge.')); };
+        this.worker.onmessage = ({ data }) => {
+          if (data.type === 'ready') { clearTimeout(timeout); resolve(); }
+          if (data.type === 'error') { clearTimeout(timeout); reject(new Error(data.message)); }
+        };
+        this.worker.postMessage({ type: 'init' });
+      });
+      if (generation !== this.generation) return;
+      this.active = true;
+      this.worker.onmessage = ({ data }) => {
+        this.workerBusy = false;
+        if (data.type === 'error') {
+          this.stop(); this.onChange({ state: 'unknown', reason: 'Tracking stopped. Re-enable camera or use manual tracking.' }); return;
+        }
+        if (data.type === 'result') {
+          this.feature = data.feature; this.faceCount = data.faceCount; this.lastFeatureAt = performance.now();
+          if (this.samples && data.feature?.eyesOpen) this.samples.push(data.feature.vector);
+          this.updateAttention();
+        }
+      };
+      this.worker.onerror = () => { this.stop(); this.onChange({ state: 'unknown', reason: 'Camera tracking stopped unexpectedly.' }); };
+      this.timer = setInterval(() => this.loop(), 125);
+      if (this.phoneTracking) this.loadPhoneModel();
+    } catch (error) {
+      this.stop();
+      if (error.name === 'NotAllowedError') throw new Error('Camera permission was declined. Allow it in browser settings, or use manual studying.');
+      if (error.name === 'NotFoundError') throw new Error('No camera found. You can still use the timer and manual studying.');
+      if (error.name === 'NotReadableError') throw new Error('Another app may be using your camera. Close it and try again.');
+      throw error;
+    }
+  }
+  stop() {
+    this.generation++; this.active = false;
+    clearInterval(this.timer); this.worker?.terminate(); this.worker = null; this.workerBusy = false;
+    this.stream?.getTracks().forEach(track => track.stop()); this.stream = null; this.video.srcObject = null;
+    this.feature = null; this.phoneHits = 0; this.phoneUntil = 0;
+    this.canvas.getContext('2d').clearRect(0, 0, this.canvas.width, this.canvas.height);
+    this.stable = { state: 'unknown', reason: 'Camera off' };
+    this.onChange(this.stable);
+  }
+  setBreak(value) { this.breakMode = value; if (value) this.onChange({ state: 'unknown', reason: 'Tracking rests during your break' }); }
+  setOptions(settings) {
+    this.sensitivity = settings.sensitivity; this.phoneTracking = settings.phoneTracking;
+    if (!this.phoneTracking) {
+      this.phoneUntil = 0; this.phoneHits = 0; this.onPhoneStatus('Phone detection is off in settings.');
+      this.canvas.getContext('2d').clearRect(0, 0, this.canvas.width, this.canvas.height);
+    } else if (this.active) this.loadPhoneModel();
+  }
+  async loop() {
+    if (!this.active || this.breakMode || document.hidden || this.video.readyState < 2) return;
+    const now = performance.now();
+    if (!this.workerBusy) {
+      this.workerBusy = true;
+      try {
+        const frame = await createImageBitmap(this.video);
+        if (!this.worker || !this.active) { frame.close(); this.workerBusy = false; return; }
+        this.worker.postMessage({ type: 'frame', frame, timestamp: now }, [frame]);
+      } catch { this.workerBusy = false; }
+    }
+    if (this.phoneTracking && this.phoneAvailable && !this.phoneBusy && now - this.lastPhoneAt > 1500) this.detectPhone();
+  }
+  getAttention() {
+    if (!this.active) return { state: 'unknown', reason: 'Camera off' };
+    if (this.breakMode) return { state: 'unknown', reason: 'Tracking rests during your break' };
+    if (document.hidden || performance.now() - this.lastFeatureAt > 2500) return { state: 'unknown', reason: 'Unobserved view' };
+    return this.stable;
+  }
+  updateAttention() {
+    const now = performance.now();
+    let next;
+    if (this.phoneTracking && now < this.phoneUntil) next = { state: 'distracted', reason: 'Visible phone (estimate)' };
+    else if (this.faceCount > 1) next = { state: 'unknown', reason: 'More than one face in view' };
+    else if (!this.profiles.screen) next = { state: 'unknown', reason: 'Calibrate your viewing positions' };
+    else next = classifyView(this.feature, this.profiles, this.sensitivity);
+    // Blinks do not erase a recent stable estimate, but a missing face is immediately unobserved.
+    if (this.feature && !this.feature.eyesOpen && this.stable.state !== 'unknown') {
+      if (!this.blinkSince) this.blinkSince = now;
+      if (now - this.blinkSince < 1200) return;
+    } else this.blinkSince = null;
+    if ((!this.feature && now >= this.phoneUntil) || this.faceCount > 1 || !this.profiles.screen) {
+      this.stable = next; this.candidate = null; this.onChange(next); return;
+    }
+    const key = next.state + next.reason;
+    if (key !== this.candidate) { this.candidate = key; this.candidateSince = now; }
+    if (now - this.candidateSince >= (next.state === 'unknown' ? 500 : 1600)) {
+      this.stable = next; this.onChange(next);
+    }
+  }
+  async capture(name) {
+    if (!this.active || this.breakMode) throw new Error('Enable the camera in Focus mode before calibrating.');
+    // Give the person time to move their eyes away from the capture button.
+    await new Promise(resolve => setTimeout(resolve, 900));
+    this.samples = [];
+    await new Promise(resolve => setTimeout(resolve, 3200));
+    const samples = this.samples; this.samples = null;
+    if (!this.active) throw new Error('Camera stopped. Enable it and try again.');
+    const profile = profileFromSamples(samples);
+    this.profiles[name] = profile;
+    if (!write('focus-studio-calibration-v1', this.profiles)) this.onPhoneStatus('Calibration is active for this visit; browser storage could not save it.');
+    return profile;
+  }
+  async loadPhoneModel() {
+    if (this.phoneAvailable) { this.onPhoneStatus('Phone detection ready · estimates visible phones only.'); return; }
+    if (this.phonePromise) return this.phonePromise;
+    this.onPhoneStatus('Downloading phone model… screen / notes tracking can still run.');
+    this.phonePromise = (async () => {
+      try {
+        if (!window.tf) await loadScript('https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js');
+        if (!window.cocoSsd) await loadScript('https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd@2.2.3/dist/coco-ssd.min.js');
+        await window.tf.ready();
+        this.phoneModel = await window.cocoSsd.load({ base: 'lite_mobilenet_v2' });
+        this.phoneAvailable = true;
+        this.onPhoneStatus(this.phoneTracking ? 'Phone detection ready · estimates visible phones only.' : 'Phone detection is off in settings.');
+      } catch {
+        this.phoneAvailable = false;
+        this.onPhoneStatus('Phone detection unavailable. Screen / notes tracking still works. Use manual distracted for phone time.');
+      } finally { this.phonePromise = null; }
+    })();
+    return this.phonePromise;
+  }
+  async detectPhone() {
+    this.phoneBusy = true; this.lastPhoneAt = performance.now();
+    const generation = this.generation;
+    try {
+      const objects = await this.phoneModel.detect(this.video, 12, .5);
+      if (!this.active || generation !== this.generation || !this.phoneTracking || this.breakMode) return;
+      const phones = objects.filter(item => item.class === 'cell phone' && item.score >= .55);
+      this.phoneHits = phones.length ? this.phoneHits + 1 : 0;
+      if (this.phoneHits >= 2) this.phoneUntil = performance.now() + 3300;
+      const ctx = this.canvas.getContext('2d');
+      this.canvas.width = this.video.videoWidth; this.canvas.height = this.video.videoHeight;
+      ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+      ctx.strokeStyle = '#e2ae63'; ctx.lineWidth = 3;
+      if (this.phoneHits >= 2) for (const p of phones) ctx.strokeRect(...p.bbox);
+    } catch {
+      this.phoneAvailable = false;
+      this.onPhoneStatus('Phone detection stopped. Use manual distracted or turn the camera off and on to retry.');
+    } finally { this.phoneBusy = false; }
+  }
+}
+
+
+const $ = id => document.getElementById(id);
+const DEFAULTS = { study: 50, shortBreak: 15, longBreak: 30, longEvery: 4, goal: 180,
+  sound: true, phoneTracking: true, sensitivity: 1 };
+const STORAGE_PREFIX = 'focus-studio-web:' + location.pathname.replace(/\/[^/]*\.[^/]*$/, '/').replace(/\/?$/, '/') + ':';
+let browserStorage;
+try { browserStorage = window.localStorage; } catch { browserStorage = { getItem: () => null, setItem: () => { throw new Error('Unavailable'); } }; }
+const store = new BrowserStore(browserStorage, STORAGE_PREFIX, DEFAULTS);
+const localDay = (date = new Date()) => `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+const read = (key, fallback) => store.read(key, fallback);
+const write = (key, value) => { try { store.write(key, value); return true; } catch { return false; } };
+let settings = store.settings();
+let sessions = [];
+let queue = read('focus-studio-outbox', {});
+if (!queue || Array.isArray(queue) || typeof queue !== 'object') queue = {};
+let mode = 'study', clock = new StudyClock(settings.study * 60), session = null, initialized = false;
+let cycle = read('focus-studio-cycle', 0), trackingMode = 'auto', readonly = false;
+if (!Number.isInteger(cycle) || cycle < 0) cycle = 0;
+let lastLocalSave = 0, lastApiSave = 0, lastJournalRender = 0;
+let syncing = null, toastTimer, confirmCallback = null, nextMode = 'shortBreak';
+let cameraStarting = false, captureStep = 'screen', audioContext;
+
+const restored = read('focus-studio-current', null);
+if (restored && ['study', 'shortBreak', 'longBreak'].includes(restored.mode)
+    && Number.isFinite(restored.clock?.planned) && restored.clock.planned > 0 && restored.clock.planned <= 10800
+    && Number.isFinite(restored.clock.elapsed) && restored.clock.elapsed >= 0 && restored.clock.elapsed < restored.clock.planned
+    && restored.clock.totals && ['focus','distracted','unknown','manual'].every(k => Number.isFinite(restored.clock.totals[k]) && restored.clock.totals[k] >= 0)) {
+  const t = restored.clock.totals;
+  if (Math.abs(t.focus + t.distracted + t.unknown - restored.clock.elapsed) < .1) {
+    mode = restored.mode; clock = new StudyClock(restored.clock.planned, restored.clock);
+    session = restored.session;
+    if (session) { $('subject').value = session.subject; $('intention').value = session.intention; }
+  }
+}
+
+function toast(message) {
+  $('toast').textContent = message; $('toast').hidden = false;
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => $('toast').hidden = true, 5500);
+}
+async function request(path, options = {}) {
+  // All session data stays in this browser. No API server or network save is used.
+  if (path === '/api/settings') return options.method === 'PUT' ? store.saveSettings(JSON.parse(options.body)) : store.settings();
+  if (path === '/api/sessions') return store.sessions();
+  if (path.startsWith('/api/sessions/') && options.method === 'PUT') return store.saveSession(path.split('/').at(-1), JSON.parse(options.body));
+  throw new Error('Unknown journal operation.');
+}
+function snapshotSession(status = 'active') {
+  if (!session) return null;
+  return { ...session, subject: $('subject').value.trim() || 'Untitled study block', intention: $('intention').value.trim(),
+    duration: clock.elapsed, focused: clock.totals.focus, distracted: clock.totals.distracted,
+    unknown: clock.totals.unknown, manual: clock.totals.manual, status };
+}
+function checkpoint() {
+  if (readonly) return;
+  const active = clock.elapsed > 0 || session;
+  if (!write('focus-studio-current', active ? { mode, clock: clock.snapshot(), session: snapshotSession(), wasRunning: clock.running } : null)) {
+    $('saveStatus').textContent = 'Storage unavailable · export before closing';
+  }
+  write('focus-studio-cycle', cycle);
+}
+function enqueue(payload) {
+  if (!payload || readonly) return;
+  queue[payload.id] = payload; write('focus-studio-outbox', queue);
+  $('saveStatus').textContent = 'Saving your progress…';
+}
+async function syncQueue() {
+  if (readonly) return false;
+  if (syncing) return syncing;
+  syncing = (async () => {
+    for (const id of Object.keys(queue)) {
+      const payload = queue[id];
+      try {
+        await request(`/api/sessions/${id}`, { method: 'PUT', body: JSON.stringify(payload) });
+        sessions = sessions.filter(item => item.id !== id); sessions.unshift(payload);
+        if (queue[id] === payload) delete queue[id];
+        write('focus-studio-outbox', queue);
+      } catch (error) {
+        if (error.status === 409) {
+          if (queue[id] === payload) delete queue[id];
+          write('focus-studio-outbox', queue);
+          try { sessions = await request('/api/sessions'); } catch { /* Keep the visible journal available for export. */ }
+        } else {
+          $('saveStatus').textContent = 'Storage unavailable · export before closing';
+          return false;
+        }
+      }
+    }
+    $('saveStatus').textContent = Object.keys(queue).length ? 'Saving your progress…' : 'Saved in this browser';
+    return Object.keys(queue).length === 0;
+  })();
+  try { return await syncing; } finally { syncing = null; renderJournal(); }
+}
+function allSessions() {
+  const records = new Map(sessions.map(item => [item.id, item]));
+  for (const item of Object.values(queue)) records.set(item.id, item);
+  const current = snapshotSession(); if (current) records.set(current.id, current);
+  return [...records.values()].sort((a, b) => b.started_at.localeCompare(a.started_at));
+}
+function totalsToday() {
+  return allSessions().filter(s => s.local_day === localDay()).reduce((total, s) => {
+    for (const key of ['focused', 'distracted', 'unknown', 'duration']) total[key] += s[key];
+    return total;
+  }, { focused: 0, distracted: 0, unknown: 0, duration: 0 });
+}
+function renderStats() {
+  const totals = totalsToday();
+  for (const [id, key] of [['focusedStat','focused'], ['distractedStat','distracted'], ['unknownStat','unknown']]) {
+    $(id).replaceChildren(document.createTextNode(String(Math.floor(totals[key] / 60))));
+    const unit = document.createElement('span'); unit.textContent = ' min'; $(id).append(unit);
+  }
+  const observed = totals.focused + totals.distracted;
+  $('rateStat').textContent = observed ? `${Math.round(100 * totals.focused / observed)}%` : '—';
+  $('coverageLabel').textContent = totals.duration ? `${Math.round(100 * observed / totals.duration)}% of study time observed` : 'No observed study time yet';
+  const minutes = Math.floor(totals.focused / 60);
+  $('goalMinutes').textContent = minutes; $('goalTarget').textContent = settings.goal;
+  $('goalProgress').style.width = `${Math.min(100, 100 * minutes / settings.goal)}%`;
+  $('goalMessage').textContent = minutes >= settings.goal ? 'You made space for your goal. Take a breath.'
+    : minutes > 0 ? `${Math.max(0, settings.goal - minutes)} more focused minutes toward your goal.` : 'Small steps add up. Start with this one.';
+}
+function renderJournal() {
+  const all = allSessions();
+  const records = sessionsInRange(all, $('historyFilter').value, localDay());
+  renderTaskProgress(records);
+  $('taskSuggestions').replaceChildren();
+  for (const subject of [...new Set(all.map(s => s.subject))].slice(0, 40)) {
+    const option = document.createElement('option'); option.value = subject; $('taskSuggestions').append(option);
+  }
+  $('emptyHistory').hidden = records.length > 0; $('historyBody').replaceChildren();
+  for (const record of records.slice(0, 100)) {
+    const row = document.createElement('tr');
+    const name = document.createElement('td');
+    const strong = document.createElement('strong'); strong.textContent = record.subject;
+    const small = document.createElement('small');
+    const when = new Date(record.started_at).toLocaleString(undefined, { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
+    small.textContent = `${when}${record.manual > 0 ? ' · includes manual time' : ''}`;
+    name.append(strong, small); name.title = record.intention || record.subject; row.append(name);
+    for (const amount of [record.duration, record.focused]) {
+      const td = document.createElement('td'); td.textContent = `${(amount / 60).toFixed(1)} min`; row.append(td);
+    }
+    const attention = document.createElement('td'), bar = document.createElement('div'); bar.className = 'attention-bar';
+    for (const key of ['focused','distracted','unknown']) {
+      const span = document.createElement('span'); span.style.width = `${record.duration ? 100 * record[key] / record.duration : 0}%`; bar.append(span);
+    }
+    const observed = record.focused + record.distracted;
+    const note = document.createElement('small'); note.textContent = `${observed ? Math.round(100 * record.focused / observed) + '% focus' : 'Unobserved'} · ${record.duration ? Math.round(100 * observed / record.duration) : 0}% coverage`;
+    attention.append(bar, note); row.append(attention);
+    const status = document.createElement('td'), chip = document.createElement('span'); chip.className = 'session-status';
+    chip.textContent = record.id === session?.id ? (clock.running ? 'In progress' : 'Paused') : ({ completed: 'Completed', ended: 'Finished early', active: 'Interrupted' }[record.status] || record.status);
+    status.append(chip); row.append(status); $('historyBody').append(row);
+  }
+}
+
+function renderTaskProgress(records) {
+  const totals = taskTotals(records), duration = records.reduce((sum, s) => sum + s.duration, 0);
+  $('rangeTotal').textContent = `${(duration / 60).toFixed(1)} min across ${records.length} session${records.length === 1 ? '' : 's'}`;
+  $('taskProgress').replaceChildren();
+  if (!totals.length) {
+    const empty = document.createElement('p'); empty.className = 'small-note'; empty.textContent = 'Your subjects and their study time will appear here.';
+    $('taskProgress').append(empty); return;
+  }
+  for (const item of totals.slice(0, 12)) {
+    const row = document.createElement('div'); row.className = 'task-progress-row';
+    const subject = document.createElement('span'); subject.className = 'task-progress-name'; subject.textContent = item.subject; subject.title = item.subject;
+    const bar = document.createElement('div'); bar.className = 'task-progress-track';
+    for (const key of ['focused', 'distracted', 'unknown']) {
+      const span = document.createElement('span'); span.style.width = `${100 * item[key] / (totals[0].duration || 1)}%`; bar.append(span);
+    }
+    const time = document.createElement('span'); time.className = 'task-progress-time'; time.textContent = `${(item.duration / 60).toFixed(1)} min`;
+    row.setAttribute('aria-label', `${item.subject}: ${(item.duration / 60).toFixed(1)} study minutes, ${(item.focused / 60).toFixed(1)} focused minutes`);
+    row.append(subject, bar, time); $('taskProgress').append(row);
+  }
+  if (totals.length > 12) {
+    const extra = document.createElement('p'); extra.className = 'small-note'; extra.textContent = `Showing the 12 subjects with the most study time, out of ${totals.length}.`;
+    $('taskProgress').append(extra);
+  }
+}
+function renderTimer() {
+  const seconds = Math.ceil(clock.remaining), minutes = Math.floor(seconds / 60);
+  const time = `${String(minutes).padStart(2,'0')}:${String(seconds % 60).padStart(2,'0')}`;
+  $('countdown').textContent = time; $('countdown').setAttribute('aria-label', `${minutes} minutes ${seconds % 60} seconds remaining`);
+  document.title = clock.running ? `${time} · ${mode === 'study' ? 'Focus' : 'Break'} · Focus Studio` : 'Focus Studio · A little more present';
+  $('ringProgress').style.strokeDashoffset = String(860.797 * (clock.elapsed / clock.planned));
+  document.querySelector('.timer-card').classList.toggle('is-break', mode !== 'study');
+  $('startPause').replaceChildren(document.createTextNode(readonly ? 'Open in another tab' : clock.running ? 'Pause' : clock.elapsed ? 'Resume' : mode === 'study' ? 'Start focusing' : 'Start my break'));
+  const arrow = document.createElementNS('http://www.w3.org/2000/svg', 'svg'), use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+  use.setAttribute('href', '#arrow'); arrow.append(use); $('startPause').append(arrow);
+  $('startPause').disabled = readonly || !initialized;
+  $('timerOverline').textContent = mode !== 'study' ? (mode === 'longBreak' ? 'A LITTLE LONGER TO RESET' : 'ROOM TO RECHARGE') : clock.running ? 'ONE THING AT A TIME' : clock.elapsed ? 'YOUR PLACE IS SAVED' : 'TIME TO SETTLE IN';
+  $('timerCaption').textContent = mode !== 'study' ? 'Rest is part of the work.' : clock.running ? 'You only need to be here, now.' : clock.elapsed ? 'Take your time. Resume when ready.' : 'A fresh start, whenever you’re ready.';
+  $('endSession').hidden = !session;
+  const current = cycle % settings.longEvery;
+  $('blockLabel').textContent = `Block ${current + 1} of ${settings.longEvery}`;
+  $('cycleDots').replaceChildren();
+  for (let i = 0; i < settings.longEvery; i++) {
+    const dot = document.createElement('span'); dot.className = i < current ? 'done' : i === current ? 'current' : ''; $('cycleDots').append(dot);
+  }
+  $('cycleDots').setAttribute('aria-label', `${current} study blocks completed in this cycle`);
+  $('nextBreak').textContent = mode === 'study' ? `${current === settings.longEvery - 1 ? settings.longBreak : settings.shortBreak} min ${current === settings.longEvery - 1 ? 'long ' : ''}break comes next` : 'Come back with a little more energy';
+  for (const button of document.querySelectorAll('[data-mode]')) {
+    const selected = button.dataset.mode === mode;
+    button.classList.toggle('selected', selected); button.setAttribute('aria-pressed', String(selected));
+  }
+  $('todayLabel').textContent = new Date().toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' }).toUpperCase();
+}
+function attention() {
+  if (document.hidden) return { state: 'unknown', reason: 'Tab hidden' };
+  if (trackingMode === 'focus') return { state: 'focus', reason: 'Manual studying' };
+  if (trackingMode === 'distracted') return { state: 'distracted', reason: 'Manual distracted' };
+  return camera.getAttention();
+}
+function tick() {
+  const now = Date.now(), observed = attention();
+  if (clock.tick(now, observed.state, trackingMode !== 'auto')) { completeBlock(); return; }
+  if (now - lastLocalSave > 1000) {
+    lastLocalSave = now; if (clock.running) checkpoint(); renderTimer(); renderStats();
+  }
+  if (clock.running && session && now - lastApiSave > 15000) {
+    lastApiSave = now; enqueue(snapshotSession()); syncQueue();
+  }
+  if (now - lastJournalRender > 10000) { lastJournalRender = now; renderJournal(); }
+}
+function initAudio() {
+  try { audioContext ||= new (window.AudioContext || window.webkitAudioContext)(); audioContext.resume().catch(() => {}); } catch { /* Sound is optional. */ }
+}
+function chime() {
+  if (!settings.sound || !audioContext) return;
+  for (const [i, frequency] of [523.25, 659.25, 783.99].entries()) {
+    const oscillator = audioContext.createOscillator(), gain = audioContext.createGain();
+    const start = audioContext.currentTime + i * .18;
+    oscillator.type = 'sine'; oscillator.frequency.value = frequency;
+    gain.gain.setValueAtTime(0, start); gain.gain.linearRampToValueAtTime(.12, start + .025);
+    gain.gain.exponentialRampToValueAtTime(.001, start + .7);
+    oscillator.connect(gain); gain.connect(audioContext.destination); oscillator.start(start); oscillator.stop(start + .75);
+  }
+}
+function toggleTimer() {
+  if (readonly || !initialized) return;
+  initAudio();
+  if (clock.running) {
+    const a = attention();
+    if (clock.pause(Date.now(), a.state, trackingMode !== 'auto')) { completeBlock(); return; }
+    enqueue(snapshotSession()); syncQueue();
+  } else {
+    if (mode === 'study' && !session) {
+      session = { id: crypto.randomUUID(), started_at: new Date().toISOString(), local_day: localDay(),
+        subject: $('subject').value.trim() || 'Untitled study block', intention: $('intention').value.trim() };
+      enqueue(snapshotSession()); syncQueue();
+      if (trackingMode === 'auto' && !camera.active) toast('Camera off: time is unobserved. Choose Manual: studying to count focused time.');
+    }
+    clock.start(Date.now());
+  }
+  checkpoint(); renderTimer(); renderJournal();
+}
+function setMode(value) {
+  mode = value; clock = new StudyClock(settings[value] * 60); session = null;
+  camera.setBreak(mode !== 'study');
+  checkpoint(); renderTimer(); renderJournal();
+  if (camera.active) onCameraChange(camera.getAttention());
+}
+function finishSession(status) {
+  const record = snapshotSession(status);
+  enqueue(record); session = null; syncQueue();
+  write('focus-studio-current', null);
+  return record;
+}
+function completeBlock() {
+  chime();
+  if (mode === 'study') {
+    const record = finishSession('completed'); cycle++; write('focus-studio-cycle', cycle);
+    nextMode = cycle % settings.longEvery === 0 ? 'longBreak' : 'shortBreak';
+    showTransition(record, nextMode);
+  } else {
+    nextMode = 'study'; showTransition(null, nextMode);
+  }
+  setMode(nextMode); renderStats();
+}
+function showTransition(record, next) {
+  $('transitionEyebrow').textContent = record ? 'A MOMENT TO RESET' : 'A FRESH PAGE';
+  $('transitionTitle').textContent = record ? 'That’s a block in the books.' : 'Ready for your next small win?';
+  $('transitionMessage').textContent = record ? `You showed up for ${(record.duration / 60).toFixed(1)} minutes. Your ${settings[next]}-minute ${next === 'longBreak' ? 'long ' : ''}break is ready.` : 'Your break is complete. Pick one clear intention for the next study block.';
+  $('transitionStats').replaceChildren();
+  if (record) for (const [label, key] of [['Focused','focused'], ['Distracted','distracted'], ['Unobserved','unknown']]) {
+    const div = document.createElement('div'), strong = document.createElement('strong'), small = document.createElement('small');
+    strong.textContent = `${(record[key] / 60).toFixed(1)}m`; small.textContent = label; div.append(strong, small); $('transitionStats').append(div);
+  }
+  $('breakTip').textContent = record ? 'Stand up, get some water, and give your eyes a different view.' : 'Settle back in. One thing at a time is enough.';
+  $('startNext').textContent = record ? 'Start my break →' : 'Start my next study block →';
+  if (!$('transitionDialog').open) $('transitionDialog').showModal();
+}
+function confirmAction(title, message, callback) {
+  if (readonly) return;
+  $('confirmTitle').textContent = title; $('confirmMessage').textContent = message; confirmCallback = callback;
+  $('confirmDialog').showModal();
+}
+function endEarly(next = 'shortBreak') {
+  const a = attention();
+  if (clock.pause(Date.now(), a.state, trackingMode !== 'auto')) { completeBlock(); return; }
+  finishSession('ended'); setMode(next); renderStats(); toast('Your study time is saved.');
+}
+
+function onCameraChange(result) {
+  const active = camera.active;
+  $('cameraView').classList.toggle('active', active); $('cameraEmpty').hidden = active;
+  $('cameraControls').hidden = !active; $('liveStatus').hidden = !active;
+  $('cameraBadge').textContent = active ? mode !== 'study' ? 'ON BREAK' : 'LOCAL · LIVE' : 'CAMERA OFF';
+  $('cameraBadge').classList.toggle('on', active);
+  $('liveStatusText').textContent = trackingMode !== 'auto' && mode === 'study' ? trackingMode === 'focus' ? 'Manual studying' : 'Manual distracted' : result.reason;
+  $('liveStatus').style.color = result.state === 'distracted' ? '#a47c3b' : result.state === 'focus' ? '#416136' : '#7f8977';
+  $('cameraMessage').textContent = trackingMode !== 'auto' && mode === 'study' ? trackingMode === 'focus' ? 'Manual studying selected · active study time counts as focus.' : 'Manual distracted selected · active study time counts as distraction.' : active ? !camera.profiles.screen ? 'Next: calibrate your screen and paper-notes positions.'
+    : mode !== 'study' ? 'Attention estimates pause during breaks.' : 'Calibrated estimates · use manual tracking whenever needed.' : result.reason === 'Camera off' ? 'Camera off · choose manual studying to count focus time.' : result.reason;
+}
+const camera = new AttentionCamera($('video'), $('overlay'), onCameraChange, text => $('phoneModelStatus').textContent = text);
+camera.setOptions(settings); camera.setBreak(mode !== 'study');
+
+$('startPause').addEventListener('click', toggleTimer);
+$('endSession').addEventListener('click', () => confirmAction('Finish this block?', 'Your study time will be saved. Finishing early does not advance the four-block cycle.', () => endEarly()));
+$('resetTimer').addEventListener('click', () => {
+  if (session) confirmAction('Restart this block?', 'Your current study time will be saved as a finished-early block. The timer will start fresh.', () => endEarly(mode));
+  else { setMode(mode); toast('A fresh timer is ready.'); }
+});
+for (const button of document.querySelectorAll('[data-mode]')) button.addEventListener('click', () => {
+  if (readonly || mode === button.dataset.mode) return;
+  const target = button.dataset.mode;
+  if (session) confirmAction('Switch to a different block?', 'Your current study time will be saved before switching.', () => endEarly(target));
+  else { if (clock.running) { const a = attention(); clock.pause(Date.now(), a.state, false); } setMode(target); }
+});
+$('startNext').addEventListener('click', () => { $('transitionDialog').close(); toggleTimer(); });
+$('laterNext').addEventListener('click', () => $('transitionDialog').close());
+$('confirmAction').addEventListener('click', () => { $('confirmDialog').close(); const action = confirmCallback; confirmCallback = null; action?.(); });
+$('confirmCancel').addEventListener('click', () => $('confirmDialog').close());
+for (const button of document.querySelectorAll('.close-dialog')) button.addEventListener('click', () => button.closest('dialog').close());
+$('historyFilter').addEventListener('change', renderJournal);
+for (const id of ['subject','intention']) $(id).addEventListener('input', () => { checkpoint(); if (session) renderJournal(); });
+$('trackingMode').addEventListener('change', () => {
+  // Credit the preceding interval to the old mode before applying the user's correction.
+  tick(); trackingMode = $('trackingMode').value; onCameraChange(camera.getAttention());
+  toast(trackingMode === 'auto' ? 'Automatic estimates selected.' : trackingMode === 'focus' ? 'Study time now counts as manual focus.' : 'Study time now counts as manual distracted.');
+});
+document.addEventListener('keydown', event => {
+  if (event.target.closest('input,select,textarea,button,a,[contenteditable]') || document.querySelector('dialog[open]') || event.metaKey || event.ctrlKey || event.altKey || event.repeat) return;
+  if (event.code === 'Space') { event.preventDefault(); toggleTimer(); }
+  const key = event.key.toLowerCase();
+  if (['f','d','a'].includes(key)) { $('trackingMode').value = { f:'focus', d:'distracted', a:'auto' }[key]; $('trackingMode').dispatchEvent(new Event('change')); }
+});
+for (const id of ['openHelp','footerHelp']) $(id).addEventListener('click', () => $('helpDialog').showModal());
+function openSettings() {
+  for (const [name, value] of Object.entries(settings)) {
+    const input = $('settingsForm').elements.namedItem(name);
+    if (input.type === 'checkbox') input.checked = value; else input.value = value;
+  }
+  $('settingsDialog').showModal();
+}
+for (const id of ['openSettings','topSettings']) $(id).addEventListener('click', openSettings);
+$('resetCycle').addEventListener('click', () => {
+  if (readonly) return;
+  cycle = 0; write('focus-studio-cycle', cycle); renderTimer();
+  toast('Break cycle restarted. Your study journal is unchanged.');
+});
+$('settingsForm').addEventListener('submit', async event => {
+  event.preventDefault(); if (readonly) return;
+  const values = {};
+  for (const name of Object.keys(DEFAULTS)) {
+    const input = $('settingsForm').elements.namedItem(name);
+    values[name] = input.type === 'checkbox' ? input.checked : Number(input.value);
+  }
+  const submit = event.submitter; submit.disabled = true;
+  try {
+    const result = await request('/api/settings', { method: 'PUT', body: JSON.stringify(values) });
+    settings = result; write('focus-studio-settings', settings); camera.setOptions(settings);
+    if (!clock.elapsed && !clock.running && !session) clock = new StudyClock(settings[mode] * 60);
+    $('settingsDialog').close(); renderTimer(); renderStats(); toast('Your study rhythm is saved.');
+  } catch (error) { toast(error.message); } finally { submit.disabled = false; }
+});
+$('enableCamera').addEventListener('click', async () => {
+  if (cameraStarting || readonly || !initialized) return;
+  cameraStarting = true; $('enableCamera').disabled = true; $('enableCamera').textContent = 'Loading camera models…';
+  $('cameraMessage').textContent = 'Allow camera access when your browser asks. Models load on first use.';
+  try {
+    await camera.start(); onCameraChange(camera.getAttention());
+    if (camera.active && mode === 'study') openCalibration();
+  } catch (error) { $('cameraMessage').textContent = error.message; toast(error.message); }
+  finally { cameraStarting = false; $('enableCamera').disabled = false; $('enableCamera').textContent = 'Enable camera'; }
+});
+$('disableCamera').addEventListener('click', () => { tick(); camera.stop(); $('phoneModelStatus').textContent = 'Camera off · no image processing is running.'; });
+function openCalibration() {
+  if (mode !== 'study') { toast('Switch to Focus mode to calibrate your viewing positions.'); return; }
+  captureStep = 'screen'; $('screenCheck').textContent = ''; $('notesCheck').textContent = '';
+  $('captureCalibration').textContent = 'Capture screen position';
+  $('calibrationMessage').textContent = 'We’ll sample each position for 3 seconds.'; $('calibrationMessage').classList.remove('error');
+  if (!$('calibrationDialog').open) $('calibrationDialog').showModal();
+}
+$('calibrateCamera').addEventListener('click', openCalibration);
+$('captureCalibration').addEventListener('click', async () => {
+  if (captureStep === 'done') { $('calibrationDialog').close(); return; }
+  const target = captureStep, button = $('captureCalibration'); button.disabled = true;
+  $('calibrationMessage').classList.remove('error');
+  $('calibrationMessage').textContent = target === 'screen' ? 'Capturing… keep reading the screen for 3 seconds.' : 'Capturing… look down at your notes for 3 seconds.';
+  try {
+    await camera.capture(target); $(target + 'Check').textContent = '✓';
+    if (target === 'screen') { captureStep = 'notes'; button.textContent = 'Capture notes position'; $('calibrationMessage').textContent = 'Screen captured. Now look at your notes immediately after clicking below.'; }
+    else { captureStep = 'done'; button.textContent = 'Ready to focus'; $('calibrationMessage').textContent = 'Both positions saved. Keep the camera and notes in these positions.'; }
+    onCameraChange(camera.getAttention());
+  } catch (error) { $('calibrationMessage').textContent = error.message; $('calibrationMessage').classList.add('error'); }
+  finally { button.disabled = false; }
+});
+$('exportCsv').addEventListener('click', async event => {
+  event.preventDefault(); tick(); enqueue(snapshotSession());
+  await syncQueue();
+  const url = URL.createObjectURL(new Blob([csvForSessions(allSessions())], { type: 'text/csv;charset=utf-8' }));
+  const download = document.createElement('a'); download.href = url; download.download = `focus-studio-${localDay()}.csv`;
+  document.body.append(download); download.click(); download.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  toast('Your study journal has been exported.');
+});
+document.addEventListener('visibilitychange', () => { tick(); checkpoint(); enqueue(snapshotSession()); syncQueue(); });
+window.addEventListener('pagehide', () => { tick(); checkpoint(); enqueue(snapshotSession()); camera.stop(); });
+window.addEventListener('pageshow', event => { if (event.persisted && clock.running) { clock.running = false; clock.lastTick = null; checkpoint(); renderTimer(); toast('Your timer is paused. Resume when ready.'); } });
+
+async function initialize() {
+  if (navigator.locks) {
+    navigator.locks.request(STORAGE_PREFIX + 'active-tab', { ifAvailable: true }, async lock => {
+      if (!lock) {
+        readonly = true; toast('Focus Studio is already open in another tab. Use that tab for your timer.'); renderTimer();
+        for (const id of ['enableCamera','resetTimer','trackingMode','subject','intention']) $(id).disabled = true;
+        return;
+      }
+      await new Promise(() => {});
+    });
+  }
+  const [remoteSettings, remoteSessions] = await Promise.allSettled([request('/api/settings'), request('/api/sessions')]);
+  if (remoteSettings.status === 'fulfilled') {
+    settings = remoteSettings.value; write('focus-studio-settings', settings); camera.setOptions(settings);
+    if (!restored && !session && !clock.running && !clock.elapsed) clock = new StudyClock(settings[mode] * 60);
+  }
+  if (remoteSessions.status === 'fulfilled') sessions = remoteSessions.value;
+  else $('saveStatus').textContent = 'Storage unavailable · export before closing';
+  if (session) {
+    const saved = sessions.find(s => s.id === session.id);
+    if (saved && saved.status !== 'active') { session = null; setMode('study'); }
+    else {
+      if (saved && saved.duration > clock.elapsed) {
+        clock.elapsed = Math.min(saved.duration, clock.planned);
+        clock.totals = { focus: saved.focused, distracted: saved.distracted, unknown: saved.unknown, manual: saved.manual };
+      }
+      toast('Your last block is restored and paused. Resume when you’re ready.');
+    }
+  }
+  await syncQueue(); initialized = true; renderTimer(); renderStats(); renderJournal();
+}
+renderTimer(); renderStats(); renderJournal(); initialize();
+setInterval(tick, 250);
+setInterval(() => { if (Object.keys(queue).length && !readonly) syncQueue(); }, 20000);
+
+})();
+
+</script>
+</body></html>

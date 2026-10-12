@@ -1,32 +1,34 @@
-# Focus Studio — simple upload edition
+# Focus Studio
 
-Everything needed for the interface and camera controls is included inside app.py.
-No static or templates folders are required.
+**Open the study app: https://tateereynolds.github.io/Big-Cloud/**
 
-## Upload to GitHub
+The website runs directly in your browser. You do not need Python, VS Code, or a terminal to use it.
 
-Upload all files in this folder directly to the top level of your repository.
-If you already uploaded the previous version, replace app.py with this version.
-Existing loose JavaScript, CSS, HTML, and test files can remain; this edition does not load them.
+## Start studying
 
-## Run on your computer
+1. Open the link above, preferably in Chrome or Edge.
+2. Enter your subject and a small goal.
+3. Optionally enable your camera and allow the camera prompt. Capture your screen viewing position, then your paper-notes position.
+4. Start a study block. If camera estimates do not fit your work, choose **Manual: studying** or **Manual: distracted**.
 
-Install Python 3.10 or newer. Open a terminal in this folder and run:
+Defaults: a 50-minute study block, 15-minute short break, and a 30-minute long break after four completed study blocks. In **Customize**, you can choose a 60-minute long break and adjust other durations. Pauses and breaks do not count as study time. Each new block waits for your click. Finishing early saves your time without advancing the break cycle.
 
-    python3 launch.py
+## Your data
 
-On Windows, use:
+The journal, settings, and calibration are saved in **this browser on this device**. They are not uploaded to GitHub and do not automatically sync to another browser or device. Use **Export** to download your study history as CSV. Clearing browser data can erase saved progress. Private browsing or a full/blocked storage area can prevent saves; the app shows a warning and still lets you export the visible journal.
 
-    py -3 launch.py
+Refreshing restores a paused timer from its latest checkpoint. Closed-browser time is excluded. Sleeping/throttled intervals are marked unobserved and capped at the end of the study block. The journal displays up to 100 selected sessions; task summaries include all saved sessions in the chosen range.
 
-Or double-click Start Focus Studio.command on Mac / Start Focus Studio.bat on Windows.
-First-time setup needs internet. Keep the terminal open while studying.
-Open the localhost address printed in the terminal.
+## Camera estimates
 
-The app runs locally. Uploading its code to GitHub does not publish a running website.
+Camera images are processed in your browser and are never recorded or uploaded. No microphone is requested. MediaPipe estimates iris position and head direction relative to your calibrated screen and notes views. A TensorFlow.js COCO-SSD model estimates visible phones. Its libraries/model files download from jsDelivr and Google when enabled.
 
-## Camera and breaks
+These are attention estimates, not a measure of learning. Lighting, glasses, camera angle, and posture affect them. A visible unused phone can count as distracted, and a phone outside the camera view cannot be detected. Recalibrate after moving your laptop or notes. If your face is not visible while reading, use manual studying. Brief blinks/glances are smoothed. Uncertain views, multiple faces, camera-off time, hidden tabs, and computer sleep are unobserved. Tracking pauses during breaks; **Turn off** releases the camera.
 
-Default: 50 minutes studying, 15 minutes for a short break, and a 30-minute long break after four completed blocks. Long breaks can be changed to 60 minutes.
+Focus rate = focused / (focused + distracted); coverage = observed / all study time. Manual minutes are identified in the journal and CSV. A high focus rate with low coverage does not describe the whole block.
 
-Enable the camera, calibrate your screen and paper-notes positions, and start a block. Manual study and distracted modes are available. Camera estimates cannot measure learning; a visible unused phone can be flagged, and a phone outside the camera view can be missed. Libraries and models download from jsDelivr and Google. Images are processed in the browser and are not saved or uploaded. Python stores session totals locally in instance/focus.sqlite3, excluded from GitHub by .gitignore.
+## Repository files
+
+`index.html` contains the full GitHub Pages app, including its interface, timer, browser journal, and camera worker. `.nojekyll` lets Pages serve it directly. Existing Python files remain available for the earlier local edition; they are not used by the website.
+
+To update the website, replace **index.html** at the top level of this repository. No folder uploads or Python hosting are needed.
