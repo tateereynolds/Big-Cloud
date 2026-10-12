@@ -1,0 +1,33 @@
+<!doctype html><meta charset="utf-8"><title>Camera model smoke check</title>
+<h1>Camera model smoke check</h1><p>No camera access. Runs inference on a blank generated image.</p>
+<button id="run">Check model initialization</button><pre id="result">Ready</pre><canvas id="image" width="640" height="480"></canvas>
+<script type="module">
+import { AttentionCamera } from './camera.js';
+const output = document.getElementById('result'), canvas = document.getElementById('image');
+document.getElementById('run').onclick = async () => {
+  document.getElementById('run').disabled = true;
+  canvas.getContext('2d').fillRect(0,0,640,480);
+  output.textContent = 'Loading face worker…';
+  const worker = new Worker('/static/face-worker.js');
+  worker.onerror = event => output.textContent += '\nFACE FAIL: ' + event.message;
+  worker.onmessage = async ({data}) => {
+    if(data.type==='error') output.textContent += '\nFACE FAIL: ' + data.message;
+    if(data.type==='ready') {
+      output.textContent += '\nFace model initialized.';
+      const frame = await createImageBitmap(canvas);
+      worker.postMessage({type:'frame',frame,timestamp:performance.now()},[frame]);
+    }
+    if(data.type==='result') {
+      output.textContent += '\nFACE PASS: inference completed; face count ' + data.faceCount;
+      worker.terminate();
+    }
+  };
+  worker.postMessage({type:'init'});
+  const camera = new AttentionCamera(document.createElement('video'),canvas,()=>{},text=>output.textContent += '\n'+text);
+  await camera.loadPhoneModel();
+  if(camera.phoneAvailable) {
+    try { const predictions = await camera.phoneModel.detect(canvas); output.textContent += '\nPHONE PASS: inference completed; objects ' + predictions.length; camera.phoneModel.dispose(); }
+    catch(error) { output.textContent += '\nPHONE FAIL: ' + error.message; }
+  }
+};
+</script>
