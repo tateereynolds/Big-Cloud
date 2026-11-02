@@ -1,0 +1,20 @@
+# Local Terraform data can contain credentials and sensitive resource settings.
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfplan.json
+*.tfvars
+*.tfvars.json
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Local Python environments and generated files.
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
